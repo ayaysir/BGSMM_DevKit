@@ -5,6 +5,10 @@ import PackageDescription
 
 let package = Package(
     name: "BGSMM_DevKit",
+    defaultLocalization: "en",
+    platforms: [
+        .iOS(.v11)
+    ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
@@ -20,9 +24,16 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "BGSMM_DevKit",
-            dependencies: []),
-        .testTarget(
-            name: "BGSMM_DevKitTests",
-            dependencies: ["BGSMM_DevKit"]),
+            dependencies: [],
+            resources: [.process("Resources")]
+        ),
+        
+        // 테스트를 사용하지 않는다면 .testTarget은 삭제
+        // .testTarget(
+        //     name: "BGSMM_DevKitTests",
+        //     dependencies: ["BGSMM_DevKit"]),
+    ],
+    swiftLanguageVersions: [
+        .v5
     ]
 )
