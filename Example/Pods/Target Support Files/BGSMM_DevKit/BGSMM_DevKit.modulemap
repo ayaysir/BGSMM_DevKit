@@ -1,0 +1,6 @@
+framework module BGSMM_DevKit {
+  umbrella header "BGSMM_DevKit-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -30,7 +30,7 @@ public struct SimpleAlert {
     }
     
     // Type 1: Title and Message
-    public func simpleAlert(message: String? = nil,
+    public func present(message: String? = nil,
                      title: String? = nil,
                      handler: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -40,12 +40,12 @@ public struct SimpleAlert {
         targetVC.present(alertController, animated: true, completion: nil)
     }
     
-    public func simpleAlertCaution(messageOnly message: String) {
-        simpleAlert(message: message, title: AlertActionText.CAUTION.localized(), handler: nil)
+    public func presentCaution(message: String) {
+        present(message: message, title: AlertActionText.CAUTION.localized(), handler: nil)
     }
     
     // Type 2: Yes And No
-    func simpleYesAndNo(message: String? = nil,
+    public func yesAndNo(message: String? = nil,
                         title: String? = nil,
                         btnNoStyle: UIAlertAction.Style = .cancel,
                         yesHandler: ((UIAlertAction) -> Void)? = nil) {
@@ -57,7 +57,7 @@ public struct SimpleAlert {
         targetVC.present(alertController, animated: true, completion: nil)
     }
     
-    func simpleActionSheets(_ controller: UIViewController,
+    public func actionSheets(_ controller: UIViewController,
                             actionTitles: [String],
                             actionStyles: [UIAlertAction.Style]? = nil,
                             title: String,

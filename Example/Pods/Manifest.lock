@@ -1,0 +1,16 @@
+PODS:
+  - BGSMM_DevKit (0.1.0)
+
+DEPENDENCIES:
+  - BGSMM_DevKit (from `../`)
+
+EXTERNAL SOURCES:
+  BGSMM_DevKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  BGSMM_DevKit: 435bbe4ded20ef541d52ec2af774c75d676d83aa
+
+PODFILE CHECKSUM: 5855bd6e0ae5bc5fee0c1400670e064a97ef3094
+
+COCOAPODS: 1.11.2

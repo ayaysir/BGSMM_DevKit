@@ -1,0 +1,22 @@
+{
+  "name": "BGSMM_DevKit",
+  "version": "0.1.0",
+  "summary": "A short description of BGSMM_DevKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/ayaysir/BGSMM_DevKit",
+  "source": {
+    "git": "https://github.com/ayaysir/BGSMM_DevKit.git",
+    "tag": "0.1.0"
+  },
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "40187546": "yoonbumtae@gmail.com"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "Sources/BGSMM_DevKit/**/*"
+}

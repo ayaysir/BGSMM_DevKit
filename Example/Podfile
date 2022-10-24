@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'BGSMM_DevKit_Example' do
+  pod 'BGSMM_DevKit', :path => '../'
+
+  target 'BGSMM_DevKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
