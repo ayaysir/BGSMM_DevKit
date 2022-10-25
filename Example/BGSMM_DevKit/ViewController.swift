@@ -17,8 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        alert = SimpleAlert(targetViewController: self)
-        alert.customActionText = AlertActionText(CAUTION: "주의", OK: "OK", NO: "아니오", YES: "예", CANCEL: "취소")
+        SimpleAlert.actionText = AlertActionText(CAUTION: "주의", OK: "OK", NO: "아니오", YES: "예", CANCEL: "취소")
         
     }
 
@@ -28,10 +27,46 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnActAlert1(_ sender: UIButton) {
-        alert.present(message: "Alert 1", title: "Alert Test") { _ in
-            self.alert.present(title: "Title Only") { _ in
-                self.alert.presentCaution(message: "Alert Caution")
-            }
+        switch sender.tag {
+        case 1:
+            normalAlert()
+        case 2:
+            titleOnlyAlert()
+        case 3:
+            messageWithCautionTitle()
+        case 4:
+            yesAndNo()
+        case 5:
+            destructiveYesAndNo()
+        default:
+            break
+        }
+        
+    }
+    
+    private func normalAlert() {
+        SimpleAlert.present(message: "Normal Alert Message", title: "Normal Alert") { _ in
+            print(#function, "completionHandler")
+        }
+    }
+    
+    private func titleOnlyAlert() {
+        SimpleAlert.present(title: "Title Only Alert")
+    }
+    
+    private func messageWithCautionTitle() {
+        SimpleAlert.presentCaution(message: "Caution Message")
+    }
+    
+    private func yesAndNo() {
+        SimpleAlert.yesAndNo(message: "Are you sure?", title: "Select", btnYesStyle: .default) { _ in
+            print(#function, "Selected YES")
+        }
+    }
+    
+    private func destructiveYesAndNo() {
+        SimpleAlert.yesAndNo(message: "Are you sure?", title: "DESTRUCTIVE ALERT", btnYesStyle: .destructive) { _ in
+            print(#function, "Selected YES")
         }
     }
     

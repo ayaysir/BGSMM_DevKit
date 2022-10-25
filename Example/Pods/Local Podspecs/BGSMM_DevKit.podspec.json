@@ -16,6 +16,11 @@
   "authors": {
     "40187546": "yoonbumtae@gmail.com"
   },
+  "resource_bundles": {
+    "BGSMM_DevKit": [
+      "Sources/BGSMM_DevKit/Resources/*.lproj"
+    ]
+  },
   "platforms": {
     "ios": "10.0"
   },

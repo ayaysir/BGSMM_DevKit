@@ -24,64 +24,57 @@ public struct AlertActionText {
     public var NO = "ALERT_NO"
     public var YES = "ALERT_YES"
     public var CANCEL = "ALERT_CANCEL"
-    
-    // public func localized() -> String {
-    //     #if SWIFT_PACKGE
-    //     return NSLocalizedString(self.rawValue, bundle: .module, comment: "")
-    //     #endif
-    //
-    //     // let bundlePath = Bundle().path(forResource: "BGSMM_DevKit" + "_in_podspec", ofType: "bundle")!
-    //     return NSLocalizedString(self.rawValue, bundle: .main, comment: "")
-    // }
 }
 
 public struct SimpleAlert {
     
-    private var targetVC: UIViewController!
-    public var customActionText: AlertActionText?
+    // MARK: - static
     
-    private var currentActionText: AlertActionText {
-        if let customActionText = customActionText {
-            return customActionText
+    public typealias Handler = ((UIAlertAction) -> Void)
+    
+    public static var actionText = AlertActionText()
+    public static var targetVC: UIViewController? = nil
+    
+    public static func present(message: String? = nil,
+                               title: String? = nil,
+                               handler: Handler? = nil) {
+        
+        guard let targetVC = targetVC ?? UIApplication.shared.topMostViewController() else {
+            fatalError("The Target View Controller could not be specified.")
         }
         
-        return AlertActionText()
-    }
-    
-    public init(targetViewController targetVC: UIViewController, customActionText: AlertActionText? = nil) {
-        self.targetVC = targetVC
-        self.customActionText = customActionText
-    }
-    
-    // Type 1: Title and Message
-    public func present(message: String? = nil,
-                     title: String? = nil,
-                     handler: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: currentActionText.OK, style: .default, handler: handler)
+        let alertAction = UIAlertAction(title: actionText.OK, style: .default, handler: handler)
         alertController.addAction(alertAction)
-    
+
         targetVC.present(alertController, animated: true, completion: nil)
+        
     }
     
-    public func presentCaution(message: String) {
-        present(message: message, title: currentActionText.CAUTION, handler: nil)
+    public static func presentCaution(message: String, handler: Handler? = nil) {
+        present(message: message, title: actionText.CAUTION, handler: handler)
     }
     
     // Type 2: Yes And No
-    public func yesAndNo(message: String? = nil,
+    public static func yesAndNo(message: String? = nil,
                         title: String? = nil,
-                        btnNoStyle: UIAlertAction.Style = .cancel,
-                        yesHandler: ((UIAlertAction) -> Void)? = nil) {
+                        btnYesStyle: UIAlertAction.Style = .default,
+                        yesHandler: Handler? = nil) {
+        
+        guard let targetVC = targetVC ?? UIApplication.shared.topMostViewController() else {
+            fatalError("The Target View Controller could not be specified.")
+        }
+        
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertActionNo = UIAlertAction(title: currentActionText.NO, style: .cancel, handler: nil)
-        let alertActionYes = UIAlertAction(title: currentActionText.NO, style: .default, handler: yesHandler)
+        let alertActionNo = UIAlertAction(title: actionText.NO, style: .cancel, handler: nil)
+        let alertActionYes = UIAlertAction(title: actionText.YES, style: btnYesStyle, handler: yesHandler)
         alertController.addAction(alertActionNo)
         alertController.addAction(alertActionYes)
         targetVC.present(alertController, animated: true, completion: nil)
     }
     
-    public func actionSheets(_ controller: UIViewController,
+    // Type 3: ActionSheet
+    public static func actionSheets(_ controller: UIViewController,
                             actionTitles: [String],
                             actionStyles: [UIAlertAction.Style]? = nil,
                             title: String,
@@ -89,6 +82,7 @@ public struct SimpleAlert {
                             sourceView: UIView?,
                             sourceRect: CGRect?,
                             actionCompletion: @escaping (_ actionIndex: Int) -> ()) {
+        
         let alertController = UIAlertController(title: title, message: "", preferredStyle: .actionSheet)
         alertController.modalPresentationStyle = .popover
         
@@ -99,7 +93,7 @@ public struct SimpleAlert {
             alertController.addAction(action)
         }
         
-        alertController.addAction(UIAlertAction(title: currentActionText.CANCEL, style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: actionText.CANCEL, style: .cancel, handler: nil))
         if let presenter = alertController.popoverPresentationController {
             presenter.sourceView = sourceView ?? controller.view.window
             presenter.sourceRect = sourceRect ?? CGRect(x: 0, y: 0, width: 0, height: 0)

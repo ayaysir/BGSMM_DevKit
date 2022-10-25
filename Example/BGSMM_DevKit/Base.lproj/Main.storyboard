@@ -20,17 +20,66 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xGo-sh-NP4">
-                                <rect key="frame" x="16" y="55" width="339" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Alert 1"/>
-                                <connections>
-                                    <action selector="btnActAlert1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yCI-j2-V4R"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CCA-Pf-vHv">
+                                <rect key="frame" x="132.5" y="233.5" width="110" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="xGo-sh-NP4">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="76"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alert 1"/>
+                                        <connections>
+                                            <action selector="btnActAlert1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yCI-j2-V4R"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="OZJ-ek-jWp" userLabel="Alert 2">
+                                        <rect key="frame" x="0.0" y="76" width="110" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alert 2"/>
+                                        <connections>
+                                            <action selector="btnActAlert1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Pf0-Kj-4xo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qXv-Lz-9wa" userLabel="Alert 3">
+                                        <rect key="frame" x="0.0" y="107" width="110" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alert 3"/>
+                                        <connections>
+                                            <action selector="btnActAlert1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="JfI-B0-1Wh"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="qro-23-eKq" userLabel="Alert 4">
+                                        <rect key="frame" x="0.0" y="138" width="110" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alert 4"/>
+                                        <connections>
+                                            <action selector="btnActAlert1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Drg-hG-SeN"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="fMX-qw-Jom" userLabel="Alert 5">
+                                        <rect key="frame" x="0.0" y="169" width="110" height="31"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Alert 5"/>
+                                        <connections>
+                                            <action selector="btnActAlert1:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yku-fv-ab9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="3cN-Tq-UWT"/>
+                                    <constraint firstAttribute="width" constant="110" id="bif-U9-fVB"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CCA-Pf-vHv" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="B5y-TC-YMo"/>
+                            <constraint firstItem="CCA-Pf-vHv" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Nyq-4S-1dt"/>
+                        </constraints>
                     </view>
                 </viewController>
             </objects>
