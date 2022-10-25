@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BGSMM_DevKit'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'BGSMM_DevKit is a collection of various utilities that I will use when developing.'
 
   # Set swift version
@@ -34,6 +34,11 @@ Include SimpleAlert, StringManipulator, and etc..
   s.source           = { :git => 'https://github.com/ayaysir/BGSMM_DevKit.git', :tag => s.version.to_s }	
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { '40187546' => 'yoonbumtae@gmail.com' }
+  
+  # Localization
+  s.resource_bundles = {
+    'BGSMM_DevKit' => ['Sources/BGSMM_DevKit/Resources/*.lproj']
+  }
 
   s.ios.deployment_target = '10.0'
 

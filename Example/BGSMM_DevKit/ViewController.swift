@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         alert = SimpleAlert(targetViewController: self)
+        alert.customActionText = AlertActionText(CAUTION: "주의", OK: "OK", NO: "아니오", YES: "예", CANCEL: "취소")
         
     }
 
@@ -27,7 +28,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnActAlert1(_ sender: UIButton) {
-        alert.present(message: "Alert 1", title: "Alert Test")
+        alert.present(message: "Alert 1", title: "Alert Test") { _ in
+            self.alert.present(title: "Title Only") { _ in
+                self.alert.presentCaution(message: "Alert Caution")
+            }
+        }
     }
     
 }

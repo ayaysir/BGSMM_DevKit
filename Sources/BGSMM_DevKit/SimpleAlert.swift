@@ -9,24 +9,48 @@
 
 import UIKit
 
-public enum AlertActionText: String {
-    case CAUTION = "ALERT_CAUTION"
-    case OK = "ALERT_OK"
-    case NO = "ALERT_NO"
-    case YES = "ALERT_YES"
-    case CANCEL = "ALERT_CANCEL"
+public struct AlertActionText {
     
-    public func localized() -> String {
-        return NSLocalizedString(self.rawValue, comment: "")
+    public init(CAUTION: String = "ALERT_CAUTION", OK: String = "ALERT_OK", NO: String = "ALERT_NO", YES: String = "ALERT_YES", CANCEL: String = "ALERT_CANCEL") {
+        self.CAUTION = CAUTION
+        self.OK = OK
+        self.NO = NO
+        self.YES = YES
+        self.CANCEL = CANCEL
     }
+    
+    public var CAUTION = "ALERT_CAUTION"
+    public var OK = "ALERT_OK"
+    public var NO = "ALERT_NO"
+    public var YES = "ALERT_YES"
+    public var CANCEL = "ALERT_CANCEL"
+    
+    // public func localized() -> String {
+    //     #if SWIFT_PACKGE
+    //     return NSLocalizedString(self.rawValue, bundle: .module, comment: "")
+    //     #endif
+    //
+    //     // let bundlePath = Bundle().path(forResource: "BGSMM_DevKit" + "_in_podspec", ofType: "bundle")!
+    //     return NSLocalizedString(self.rawValue, bundle: .main, comment: "")
+    // }
 }
 
 public struct SimpleAlert {
     
     private var targetVC: UIViewController!
+    public var customActionText: AlertActionText?
     
-    public init(targetViewController targetVC: UIViewController) {
+    private var currentActionText: AlertActionText {
+        if let customActionText = customActionText {
+            return customActionText
+        }
+        
+        return AlertActionText()
+    }
+    
+    public init(targetViewController targetVC: UIViewController, customActionText: AlertActionText? = nil) {
         self.targetVC = targetVC
+        self.customActionText = customActionText
     }
     
     // Type 1: Title and Message
@@ -34,14 +58,14 @@ public struct SimpleAlert {
                      title: String? = nil,
                      handler: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertAction = UIAlertAction(title: AlertActionText.OK.localized(), style: .default, handler: handler)
+        let alertAction = UIAlertAction(title: currentActionText.OK, style: .default, handler: handler)
         alertController.addAction(alertAction)
     
         targetVC.present(alertController, animated: true, completion: nil)
     }
     
     public func presentCaution(message: String) {
-        present(message: message, title: AlertActionText.CAUTION.localized(), handler: nil)
+        present(message: message, title: currentActionText.CAUTION, handler: nil)
     }
     
     // Type 2: Yes And No
@@ -50,8 +74,8 @@ public struct SimpleAlert {
                         btnNoStyle: UIAlertAction.Style = .cancel,
                         yesHandler: ((UIAlertAction) -> Void)? = nil) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let alertActionNo = UIAlertAction(title: AlertActionText.NO.localized(), style: .cancel, handler: nil)
-        let alertActionYes = UIAlertAction(title: AlertActionText.NO.localized(), style: .default, handler: yesHandler)
+        let alertActionNo = UIAlertAction(title: currentActionText.NO, style: .cancel, handler: nil)
+        let alertActionYes = UIAlertAction(title: currentActionText.NO, style: .default, handler: yesHandler)
         alertController.addAction(alertActionNo)
         alertController.addAction(alertActionYes)
         targetVC.present(alertController, animated: true, completion: nil)
@@ -75,7 +99,7 @@ public struct SimpleAlert {
             alertController.addAction(action)
         }
         
-        alertController.addAction(UIAlertAction(title: AlertActionText.CANCEL.localized(), style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: currentActionText.CANCEL, style: .cancel, handler: nil))
         if let presenter = alertController.popoverPresentationController {
             presenter.sourceView = sourceView ?? controller.view.window
             presenter.sourceRect = sourceRect ?? CGRect(x: 0, y: 0, width: 0, height: 0)
