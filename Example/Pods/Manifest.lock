@@ -1,5 +1,5 @@
 PODS:
-  - BGSMM_DevKit (1.0.1)
+  - BGSMM_DevKit (1.0.2)
 
 DEPENDENCIES:
   - BGSMM_DevKit (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  BGSMM_DevKit: 72d2e37c6fff23c1edcb0d86ebb3b9bf08a3e0c0
+  BGSMM_DevKit: ebb3c565bdb0c4a3e5a40c5a2c5a9e0ed24e0797
 
 PODFILE CHECKSUM: a44d712d9faff2b07ab63c07a3834c5a94288b58
 

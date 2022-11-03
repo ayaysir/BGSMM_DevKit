@@ -19,6 +19,9 @@ class ViewController: UIViewController {
         
         SimpleAlert.actionText = AlertActionText(CAUTION: "주의", OK: "OK", NO: "아니오", YES: "예", CANCEL: "취소")
         
+        let array = ["a", "b"]
+        print("Safe Subscription:", array[safe: 3] ?? "safely subscripted!")
+        
     }
 
     override func didReceiveMemoryWarning() {
