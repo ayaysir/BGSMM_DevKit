@@ -13,10 +13,8 @@
 		3A647F3A8779E673C33FF58CF2DC7D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		44519D652DBA17780084A67A /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D642DBA176F0084A67A /* String+Localization.swift */; };
 		44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D692DBA1ABE0084A67A /* Bundle+.swift */; };
-		44519D762DBA27320084A67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
 		44519D772DBA288E0084A67A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
 		60A3A251C7E95FC64AC887D0B7EC153B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		71E5E23C8F9572BE897C7F19A09BA669 /* BGSMM_DevKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */; };
 		74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D85383842F05055D3386525746D8F9 /* BGSMM_DevKit-dummy.m */; };
 		964EAFCB6248EF9A028C71E1F3ABA46D /* FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F2E1DDACFD09E615F800EC8F1C3151 /* FindTopController.swift */; };
 		B66ACE3B2B0430D2F0711802BA993E7A /* BGSMM_DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -25,13 +23,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		501467AF1EE6DAB2D2D02981E076FA72 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 289D55852C2C9D9DA0E17896EE139EE8;
-			remoteInfo = "BGSMM_DevKit-BGSMM_DevKit";
-		};
 		58BC9D69145B502D1B7613EE16B58877 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -74,17 +65,9 @@
 		C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BGSMM_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
 		F0158F4CFD2EB3B96D42610645675272 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGSMM_DevKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		61EB66568B4F97477992075AEEADA26E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		CD951CF33DFDC85276D3268FCE0688C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -219,7 +202,6 @@
 			isa = PBXGroup;
 			children = (
 				C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit.framework */,
-				F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */,
 				0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods_BGSMM_DevKit_Example.framework */,
 			);
 			name = Products;
@@ -266,23 +248,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		289D55852C2C9D9DA0E17896EE139EE8 /* BGSMM_DevKit-BGSMM_DevKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CC945042C5E10BD89C519BC397700E19 /* Build configuration list for PBXNativeTarget "BGSMM_DevKit-BGSMM_DevKit" */;
-			buildPhases = (
-				E8B3C5491B7279F4DF8D9E219E7C8C44 /* Sources */,
-				61EB66568B4F97477992075AEEADA26E /* Frameworks */,
-				644581FAEE1251586FAD1D43E8792399 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BGSMM_DevKit-BGSMM_DevKit";
-			productName = BGSMM_DevKit;
-			productReference = F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		51FFE781F56D0945A31959BAEC121BE9 /* BGSMM_DevKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6C040938F61FFF26486759A8097B12C7 /* Build configuration list for PBXNativeTarget "BGSMM_DevKit" */;
@@ -291,11 +256,11 @@
 				6B659DFCD6B8F37F0EA472E10AF3DA0B /* Sources */,
 				D052516D849EE6C34A2E688A41CD4961 /* Frameworks */,
 				EAA582E641B629C401F97579E2668E67 /* Resources */,
+				4455D23A2DBA4A6800357878 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1588AFF009B378683DE48143E4531D2E /* PBXTargetDependency */,
 			);
 			name = BGSMM_DevKit;
 			productName = BGSMM_DevKit;
@@ -345,7 +310,6 @@
 			projectRoot = "";
 			targets = (
 				51FFE781F56D0945A31959BAEC121BE9 /* BGSMM_DevKit */,
-				289D55852C2C9D9DA0E17896EE139EE8 /* BGSMM_DevKit-BGSMM_DevKit */,
 				FE39ECB6B02563B339137594537C0983 /* Pods-BGSMM_DevKit_Example */,
 			);
 		};
@@ -359,23 +323,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		644581FAEE1251586FAD1D43E8792399 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44519D762DBA27320084A67A /* Localizable.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		EAA582E641B629C401F97579E2668E67 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E5E23C8F9572BE897C7F19A09BA669 /* BGSMM_DevKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4455D23A2DBA4A6800357878 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "echo \"🚀 Run Script 실행됨! ${PROJECT_DIR}\"\n\nLIBRARY_ROOT=$(cd \"${PROJECT_DIR}/../..\" && pwd)\nPODSPEC_FILE=\"${LIBRARY_ROOT}/BGSMM_DevKit.podspec\"\n## PODSPEC_FILE=\"${PROJECT_DIR}/BGSMM_DevKit.podspec\"\n\n# 현재 버전 추출 (숫자 3개만 필터링)\nversionLine=$(grep 's.version' \"$PODSPEC_FILE\")\nversionString=$(echo \"$versionLine\" | grep -oE '[0-9]+\\.[0-9]+\\.[0-9]+')\n\nIFS='.' read -r major minor patch <<< \"$versionString\"\n\n# 패치 버전이 정수인지 확인\nif ! [[ \"$patch\" =~ ^[0-9]+$ ]]; then\n  echo \"❌ patch 버전이 정수가 아닙니다: $patch\"\n  exit 1\nfi\n\necho \"🔍 현재 버전 문자열: $versionString\"\necho \"🔍 분리된 버전(기존): major=$major, minor=$minor, patch=$patch\"\n\n# 패치 버전 증가\nnewPatch=$((patch + 1))\necho \"🫏 newPatch: $newPatch\"\nnewVersion=\"${major}.${minor}.${newPatch}\"\necho \"🔍 newVersion: ${newVersion}\"\n\n# 교체 (작은/큰따옴표 모두 대응)\nsed -i '' -E \"s/(s\\.version[[:space:]]*=[[:space:]]*['\\\"])$versionString(['\\\"])/\\1$newVersion\\2/\" \"$PODSPEC_FILE\"\n\n# 변경되었는지 확인\nif grep -q \"$newVersion\" \"$PODSPEC_FILE\"; then\n  echo \"✅ podspec 버전이 $versionString → $newVersion 으로 변경되었습니다.\"\nelse\n  echo \"❌ 버전 변경에 실패했습니다. 현재 버전: $versionString\"\n  exit 1  # 실패로 간주하고 빌드 중단\nfi\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		33F7782B3B52C3C0E248DEC7C70BBA84 /* Sources */ = {
@@ -401,22 +376,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E8B3C5491B7279F4DF8D9E219E7C8C44 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1588AFF009B378683DE48143E4531D2E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "BGSMM_DevKit-BGSMM_DevKit";
-			target = 289D55852C2C9D9DA0E17896EE139EE8 /* BGSMM_DevKit-BGSMM_DevKit */;
-			targetProxy = 501467AF1EE6DAB2D2D02981E076FA72 /* PBXContainerItemProxy */;
-		};
 		A28125A213DE5DE77D48E23D32F39E37 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BGSMM_DevKit;
@@ -439,22 +401,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1132AF710AE11FE97B5D394C55305C2B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7888B018D9F5001916B84A2D1F24159 /* BGSMM_DevKit.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BGSMM_DevKit";
-				IBSC_MODULE = BGSMM_DevKit;
-				INFOPLIST_FILE = "Target Support Files/BGSMM_DevKit/ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = BGSMM_DevKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		1438B703D9E75F561EA5B24C24EFFD2D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A7888B018D9F5001916B84A2D1F24159 /* BGSMM_DevKit.debug.xcconfig */;
@@ -613,22 +559,6 @@
 			};
 			name = Release;
 		};
-		A4C3529C23594E54B95FBD473721C500 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6665AF74E8156BCBC6194EAACF6E819 /* BGSMM_DevKit.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/BGSMM_DevKit";
-				IBSC_MODULE = BGSMM_DevKit;
-				INFOPLIST_FILE = "Target Support Files/BGSMM_DevKit/ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				PRODUCT_NAME = BGSMM_DevKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -745,15 +675,6 @@
 			buildConfigurations = (
 				1438B703D9E75F561EA5B24C24EFFD2D /* Debug */,
 				236B65AFE56D601BC8709375EE5D31EA /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CC945042C5E10BD89C519BC397700E19 /* Build configuration list for PBXNativeTarget "BGSMM_DevKit-BGSMM_DevKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1132AF710AE11FE97B5D394C55305C2B /* Debug */,
-				A4C3529C23594E54B95FBD473721C500 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
