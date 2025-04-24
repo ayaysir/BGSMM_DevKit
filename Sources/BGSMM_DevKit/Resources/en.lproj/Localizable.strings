@@ -1,5 +1,5 @@
-"ALERT_CAUTION" = "Caution";
-"ALERT_OK" = "OK";
-"ALERT_NO" = "No";
-"ALERT_YES" = "Yes";
-"ALERT_CANCEL" = "Cancel";
+"loc.alert.caution" = "Caution";
+"loc.alert.ok" = "OK";
+"loc.alert.no" = "No";
+"loc.alert.yes" = "Yes";
+"loc.alert.cancel" = "Cancel";

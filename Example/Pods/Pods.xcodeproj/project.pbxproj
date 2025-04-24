@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079BC224B4DE7EF2BCF178E3AD360E50 /* BGSMM_DevKit.swift */; };
-		17DBDCFEC24D1EC8A7C6D03D22E834DD /* en.lproj in Resources */ = {isa = PBXBuildFile; fileRef = D72A0761C7A8AF39FE1008608CD46D7E /* en.lproj */; };
 		29A2F2A7623732EC51F4B3FC1EA5962C /* Pods-BGSMM_DevKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 152235354FB8A17FB47357F52761BD2B /* Pods-BGSMM_DevKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B041457146AEF37345E99A53B7C987D /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 35F1F920FB15E08BA11EA77CBA4CFC36 /* Localizable.strings */; };
 		37BBED12437EFEDD8B6180401294CC2C /* Pods-BGSMM_DevKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60AD5E6DE4116D1542BF6AD2BA0C81F4 /* Pods-BGSMM_DevKit_Example-dummy.m */; };
 		3A647F3A8779E673C33FF58CF2DC7D53 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		44519D652DBA17780084A67A /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D642DBA176F0084A67A /* String+Localization.swift */; };
+		44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D692DBA1ABE0084A67A /* Bundle+.swift */; };
+		44519D762DBA27320084A67A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
+		44519D772DBA288E0084A67A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
 		60A3A251C7E95FC64AC887D0B7EC153B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		71E5E23C8F9572BE897C7F19A09BA669 /* BGSMM_DevKit-BGSMM_DevKit in Resources */ = {isa = PBXBuildFile; fileRef = F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit-BGSMM_DevKit */; };
+		71E5E23C8F9572BE897C7F19A09BA669 /* BGSMM_DevKit.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */; };
 		74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D85383842F05055D3386525746D8F9 /* BGSMM_DevKit-dummy.m */; };
 		964EAFCB6248EF9A028C71E1F3ABA46D /* FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F2E1DDACFD09E615F800EC8F1C3151 /* FindTopController.swift */; };
 		B66ACE3B2B0430D2F0711802BA993E7A /* BGSMM_DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,7 +43,7 @@
 
 /* Begin PBXFileReference section */
 		079BC224B4DE7EF2BCF178E3AD360E50 /* BGSMM_DevKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BGSMM_DevKit.swift; path = Sources/BGSMM_DevKit/BGSMM_DevKit.swift; sourceTree = "<group>"; };
-		0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods-BGSMM_DevKit_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-BGSMM_DevKit_Example"; path = Pods_BGSMM_DevKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods_BGSMM_DevKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BGSMM_DevKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		152235354FB8A17FB47357F52761BD2B /* Pods-BGSMM_DevKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BGSMM_DevKit_Example-umbrella.h"; sourceTree = "<group>"; };
 		1528AD90C9407E12DE6D01DA7346A965 /* Pods-BGSMM_DevKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BGSMM_DevKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1737E842715DE3E5C9AA11E3198954B8 /* Pods-BGSMM_DevKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BGSMM_DevKit_Example-Info.plist"; sourceTree = "<group>"; };
@@ -49,8 +51,11 @@
 		2A69BB2C672DCF8F8D215935DFD74780 /* SimpleAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		35F1F920FB15E08BA11EA77CBA4CFC36 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		39F8513314CD1641ADFE38B8B0F34FFE /* BGSMM_DevKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGSMM_DevKit-prefix.pch"; sourceTree = "<group>"; };
-		3EF1996FCB51A59B27415ED508646D86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		48EF759FF051073119312A17994FBCF7 /* BGSMM_DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = BGSMM_DevKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3EF1996FCB51A59B27415ED508646D86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		44519D642DBA176F0084A67A /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
+		44519D662DBA17DD0084A67A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44519D692DBA1ABE0084A67A /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		48EF759FF051073119312A17994FBCF7 /* BGSMM_DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BGSMM_DevKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5855931EC913A0C9A8E249C956F309A8 /* Pods-BGSMM_DevKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BGSMM_DevKit_Example.modulemap"; sourceTree = "<group>"; };
 		5E667739762D8012C6A71B020C45A2CC /* ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist"; sourceTree = "<group>"; };
 		60AD5E6DE4116D1542BF6AD2BA0C81F4 /* Pods-BGSMM_DevKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BGSMM_DevKit_Example-dummy.m"; sourceTree = "<group>"; };
@@ -62,15 +67,14 @@
 		9599F8C1285B101225738CC43A5AE172 /* Pods-BGSMM_DevKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BGSMM_DevKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		99D2895E5EA99617DFD3E6AB2AE54F91 /* Pods-BGSMM_DevKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BGSMM_DevKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGSMM_DevKit-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A6665AF74E8156BCBC6194EAACF6E819 /* BGSMM_DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGSMM_DevKit.release.xcconfig; sourceTree = "<group>"; };
 		A7888B018D9F5001916B84A2D1F24159 /* BGSMM_DevKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGSMM_DevKit.debug.xcconfig; sourceTree = "<group>"; };
 		AAD076461C691FBD969D98200BFD66AD /* Pods-BGSMM_DevKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BGSMM_DevKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BGSMM_DevKit; path = BGSMM_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BGSMM_DevKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+.swift"; sourceTree = "<group>"; };
-		D72A0761C7A8AF39FE1008608CD46D7E /* en.lproj */ = {isa = PBXFileReference; includeInIndex = 1; name = en.lproj; path = Sources/BGSMM_DevKit/Resources/en.lproj; sourceTree = "<group>"; };
-		F0158F4CFD2EB3B96D42610645675272 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit-BGSMM_DevKit */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "BGSMM_DevKit-BGSMM_DevKit"; path = BGSMM_DevKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0158F4CFD2EB3B96D42610645675272 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGSMM_DevKit.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +151,6 @@
 			isa = PBXGroup;
 			children = (
 				079BC224B4DE7EF2BCF178E3AD360E50 /* BGSMM_DevKit.swift */,
-				D72A0761C7A8AF39FE1008608CD46D7E /* en.lproj */,
 				74F2E1DDACFD09E615F800EC8F1C3151 /* FindTopController.swift */,
 				07C224B6007EFDF701BC9B2AC1D01BF5 /* Alert */,
 				F2C338E0D320670A3A84CC291558EBE9 /* Extensions */,
@@ -215,9 +218,9 @@
 		D2182B4FC94C9CA564C55F1B85115A36 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit */,
-				F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit-BGSMM_DevKit */,
-				0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods-BGSMM_DevKit_Example */,
+				C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit.framework */,
+				F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */,
+				0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods_BGSMM_DevKit_Example.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -233,6 +236,8 @@
 		F2C338E0D320670A3A84CC291558EBE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44519D692DBA1ABE0084A67A /* Bundle+.swift */,
+				44519D642DBA176F0084A67A /* String+Localization.swift */,
 				D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */,
 			);
 			name = Extensions;
@@ -275,7 +280,7 @@
 			);
 			name = "BGSMM_DevKit-BGSMM_DevKit";
 			productName = BGSMM_DevKit;
-			productReference = F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit-BGSMM_DevKit */;
+			productReference = F7C986510ABA44805EA8CA886FB897DE /* BGSMM_DevKit.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
 		51FFE781F56D0945A31959BAEC121BE9 /* BGSMM_DevKit */ = {
@@ -294,7 +299,7 @@
 			);
 			name = BGSMM_DevKit;
 			productName = BGSMM_DevKit;
-			productReference = C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit */;
+			productReference = C303ACEC90D5F782D0080B43E4641D5B /* BGSMM_DevKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FE39ECB6B02563B339137594537C0983 /* Pods-BGSMM_DevKit_Example */ = {
@@ -313,7 +318,7 @@
 			);
 			name = "Pods-BGSMM_DevKit_Example";
 			productName = Pods_BGSMM_DevKit_Example;
-			productReference = 0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods-BGSMM_DevKit_Example */;
+			productReference = 0AE14F2B86E89B3E2EFDF0014CDDC9EF /* Pods_BGSMM_DevKit_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -332,6 +337,7 @@
 			knownRegions = (
 				Base,
 				en,
+				ko,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = D2182B4FC94C9CA564C55F1B85115A36 /* Products */;
@@ -357,7 +363,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17DBDCFEC24D1EC8A7C6D03D22E834DD /* en.lproj in Resources */,
+				44519D762DBA27320084A67A /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -365,7 +371,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E5E23C8F9572BE897C7F19A09BA669 /* BGSMM_DevKit-BGSMM_DevKit in Resources */,
+				71E5E23C8F9572BE897C7F19A09BA669 /* BGSMM_DevKit.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,11 +390,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
 				74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */,
 				F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */,
 				964EAFCB6248EF9A028C71E1F3ABA46D /* FindTopController.swift in Sources */,
-				2B041457146AEF37345E99A53B7C987D /* Localizable.strings in Sources */,
+				44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */,
+				44519D652DBA17780084A67A /* String+Localization.swift in Sources */,
 				CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +430,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				35F1F920FB15E08BA11EA77CBA4CFC36 /* Localizable.strings */,
+				44519D662DBA17DD0084A67A /* ko */,
 			);
 			name = Localizable.strings;
 			path = .;
@@ -598,8 +607,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

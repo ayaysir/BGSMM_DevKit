@@ -10,68 +10,73 @@ import UIKit
 import BGSMM_DevKit
 
 class ViewController: UIViewController {
-
-    private var alert: SimpleAlert!
+  
+  private var alert: SimpleAlert!
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    // Do any additional setup after loading the view, typically from a nib.
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        SimpleAlert.actionText = AlertActionText(CAUTION: "주의", OK: "OK", NO: "아니오", YES: "예", CANCEL: "취소")
-        
-        let array = ["a", "b"]
-        print("Safe Subscription:", array[safe: 3] ?? "safely subscripted!")
-        
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    @IBAction func btnActAlert1(_ sender: UIButton) {
-        switch sender.tag {
-        case 1:
-            normalAlert()
-        case 2:
-            titleOnlyAlert()
-        case 3:
-            messageWithCautionTitle()
-        case 4:
-            yesAndNo()
-        case 5:
-            destructiveYesAndNo()
-        default:
-            break
-        }
-        
-    }
+    // SimpleAlert.actionText = AlertActionText(CAUTION: "주의", OK: "OK", NO: "아니오", YES: "예", CANCEL: "취소")
     
-    private func normalAlert() {
-        SimpleAlert.present(message: "Normal Alert Message", title: "Normal Alert") { _ in
-            print(#function, "completionHandler")
-        }
+    let array = ["a", "b"]
+    print("Safe Subscription:", array[safe: 3] ?? "safely subscripted!")
+   
+    print(Locale.preferredLanguages)
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+    // Dispose of any resources that can be recreated.
+  }
+  
+  @IBAction func btnActAlert1(_ sender: UIButton) {
+    switch sender.tag {
+    case 1:
+      normalAlert()
+    case 2:
+      titleOnlyAlert()
+    case 3:
+      messageWithCautionTitle()
+    case 4:
+      yesAndNo()
+    case 5:
+      destructiveYesAndNo()
+    default:
+      break
     }
-    
-    private func titleOnlyAlert() {
-        SimpleAlert.present(title: "Title Only Alert")
+  }
+  
+  private func normalAlert() {
+    SimpleAlert.showOKAlert(title: "Normal Alert", message: "Normal Alert Message") {  _ in
+      print(#function, "completionHandler")
     }
-    
-    private func messageWithCautionTitle() {
-        SimpleAlert.presentCaution(message: "Caution Message")
-    }
-    
-    private func yesAndNo() {
-        SimpleAlert.yesAndNo(message: "Are you sure?", title: "Select", btnYesStyle: .default) { _ in
-            print(#function, "Selected YES")
-        }
-    }
-    
-    private func destructiveYesAndNo() {
-        SimpleAlert.yesAndNo(message: "Are you sure?", title: "DESTRUCTIVE ALERT", btnYesStyle: .destructive) { _ in
-            print(#function, "Selected YES")
-        }
-    }
-    
+  }
+  
+  private func titleOnlyAlert() {
+    SimpleAlert.showOKAlert(title: "Title only")
+  }
+  
+  private func messageWithCautionTitle() {
+    SimpleAlert.showCautionAlert(message: "Caution Message")
+  }
+  
+  private func yesAndNo() {
+    SimpleAlert.showYesNoAlert(
+      title: "Yes or No",
+      message: "Yes? No?",
+      btnYesStyle: .default) { action in
+        print(#function, action.title ?? "Selected YES")
+      }
+  }
+  
+  private func destructiveYesAndNo() {
+    SimpleAlert.showYesNoAlert(
+      title: "Yes or No",
+      message: "Yes? No?",
+      btnYesStyle: .destructive) { action in
+        print(#function, action.title ?? "Selected YES")
+      }
+  }
 }
 
