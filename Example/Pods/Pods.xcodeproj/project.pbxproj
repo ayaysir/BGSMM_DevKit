@@ -16,6 +16,9 @@
 		44519D772DBA288E0084A67A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
 		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
 		44FD66922DBA86BF0019D1DD /* FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* FindTopController.swift */; };
+		44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD669C2DBA8B400019D1DD /* Calendar+.swift */; };
+		44FD66A12DBA8C0B0019D1DD /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66A02DBA8C0B0019D1DD /* Date+.swift */; };
+		44FD66A32DBA8DB10019D1DD /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */; };
 		60A3A251C7E95FC64AC887D0B7EC153B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D85383842F05055D3386525746D8F9 /* BGSMM_DevKit-dummy.m */; };
 		B66ACE3B2B0430D2F0711802BA993E7A /* BGSMM_DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +52,9 @@
 		44519D692DBA1ABE0084A67A /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
 		44FD66912DBA86BF0019D1DD /* FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTopController.swift; sourceTree = "<group>"; };
+		44FD669C2DBA8B400019D1DD /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
+		44FD66A02DBA8C0B0019D1DD /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
+		44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		48EF759FF051073119312A17994FBCF7 /* BGSMM_DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BGSMM_DevKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		5855931EC913A0C9A8E249C956F309A8 /* Pods-BGSMM_DevKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BGSMM_DevKit_Example.modulemap"; sourceTree = "<group>"; };
 		5E667739762D8012C6A71B020C45A2CC /* ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist"; sourceTree = "<group>"; };
@@ -135,6 +141,7 @@
 		44FD668F2DBA86550019D1DD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */,
 				44FD66912DBA86BF0019D1DD /* FindTopController.swift */,
 				44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */,
 			);
@@ -230,8 +237,10 @@
 		F2C338E0D320670A3A84CC291558EBE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44FD669C2DBA8B400019D1DD /* Calendar+.swift */,
 				44519D692DBA1ABE0084A67A /* Bundle+.swift */,
 				44519D642DBA176F0084A67A /* String+Localization.swift */,
+				44FD66A02DBA8C0B0019D1DD /* Date+.swift */,
 				D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */,
 			);
 			name = Extensions;
@@ -377,13 +386,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44FD66A12DBA8C0B0019D1DD /* Date+.swift in Sources */,
 				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
+				44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
 				74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */,
 				44FD66922DBA86BF0019D1DD /* FindTopController.swift in Sources */,
 				F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */,
 				44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */,
 				44519D652DBA17780084A67A /* String+Localization.swift in Sources */,
+				44FD66A32DBA8DB10019D1DD /* DateUtil.swift in Sources */,
 				44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */,
 				CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */,
 			);
