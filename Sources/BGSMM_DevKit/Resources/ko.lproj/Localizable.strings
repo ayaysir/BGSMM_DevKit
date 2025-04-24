@@ -3,3 +3,5 @@
 "loc.alert.no" = "아니오";
 "loc.alert.yes" = "예";
 "loc.alert.cancel" = "취소";
+
+"loc.done" = "완료";

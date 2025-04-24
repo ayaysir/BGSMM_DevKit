@@ -5,6 +5,9 @@
 //  Created by 윤범태 on 4/25/25.
 //
 
+import UIKit
+import ImageIO
+
 public struct ImageIOUtil {
   
   /// 이미지 저장

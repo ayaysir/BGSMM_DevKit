@@ -3,3 +3,5 @@
 "loc.alert.no" = "No";
 "loc.alert.yes" = "Yes";
 "loc.alert.cancel" = "Cancel";
+
+"loc.done" = "Done";
