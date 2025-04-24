@@ -23,6 +23,9 @@ class ViewController: UIViewController {
     print("Safe Subscription:", array[safe: 3] ?? "safely subscripted!")
    
     print(Locale.preferredLanguages)
+    
+    print("efff fdsf ad".containsOR("xxx", "eff")) // true
+    print("efff fdsf ad".containsAND("fds", "eff")) // true
   }
   
   override func didReceiveMemoryWarning() {
