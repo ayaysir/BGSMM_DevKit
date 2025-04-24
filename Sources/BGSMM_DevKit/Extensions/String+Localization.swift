@@ -12,7 +12,7 @@ public extension String {
     return NSLocalizedString(
       self,
       tableName: "Localizable",
-      bundle: .module,
+      bundle: .localModule,
       value: self,
       comment: ""
     )

@@ -7,10 +7,10 @@
 
 import Foundation
 
-internal class BundleFinder {}
+internal class VoidClass {}
 
 internal extension Bundle {
-  static var module: Bundle {
-    Bundle(for: BundleFinder.self)
+  static var localModule: Bundle {
+    Bundle(for: VoidClass.self)
   }
 }
