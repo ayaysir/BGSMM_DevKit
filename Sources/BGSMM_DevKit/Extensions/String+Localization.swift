@@ -9,13 +9,7 @@ import Foundation
 
 public extension String {
   var localized: String {
-    return NSLocalizedString(
-      self,
-      tableName: "Localizable",
-      bundle: .localModule,
-      value: self,
-      comment: ""
-    )
+    Bundle.localizedModule.localizedString(forKey: self, value: nil , table: nil)
   }
   
   func localizedFormat(_ arguments: CVarArg...) -> String {
