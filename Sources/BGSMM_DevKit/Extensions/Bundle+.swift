@@ -12,6 +12,9 @@ internal class VoidClass {}
 internal extension Bundle {
   /// SPM 또는 CocoaPods에서 현지화된 모듈 번들을 반환
   static var localizedModule: Bundle {
+    // ⚠️ if SWIFT_PACKAGE 안에 흐리게 나타나더라도 동작하고 있는 것이므로
+    // 반드시 사용해야함. 안하면 SPM에서 로컬라이징 안됨
+    
     #if SWIFT_PACKAGE
     // SPM: Bundle.module 사용
     let baseBundle = Bundle.module

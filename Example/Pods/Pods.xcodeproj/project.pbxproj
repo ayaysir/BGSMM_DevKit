@@ -14,9 +14,10 @@
 		44519D652DBA17780084A67A /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D642DBA176F0084A67A /* String+Localization.swift */; };
 		44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D692DBA1ABE0084A67A /* Bundle+.swift */; };
 		44519D772DBA288E0084A67A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
+		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
+		44FD66922DBA86BF0019D1DD /* FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* FindTopController.swift */; };
 		60A3A251C7E95FC64AC887D0B7EC153B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D85383842F05055D3386525746D8F9 /* BGSMM_DevKit-dummy.m */; };
-		964EAFCB6248EF9A028C71E1F3ABA46D /* FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F2E1DDACFD09E615F800EC8F1C3151 /* FindTopController.swift */; };
 		B66ACE3B2B0430D2F0711802BA993E7A /* BGSMM_DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A69BB2C672DCF8F8D215935DFD74780 /* SimpleAlert.swift */; };
 		F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */; };
@@ -46,19 +47,20 @@
 		44519D642DBA176F0084A67A /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		44519D662DBA17DD0084A67A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44519D692DBA1ABE0084A67A /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
-		48EF759FF051073119312A17994FBCF7 /* BGSMM_DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BGSMM_DevKit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
+		44FD66912DBA86BF0019D1DD /* FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTopController.swift; sourceTree = "<group>"; };
+		48EF759FF051073119312A17994FBCF7 /* BGSMM_DevKit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = BGSMM_DevKit.podspec; sourceTree = "<group>"; tabWidth = 2; };
 		5855931EC913A0C9A8E249C956F309A8 /* Pods-BGSMM_DevKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-BGSMM_DevKit_Example.modulemap"; sourceTree = "<group>"; };
 		5E667739762D8012C6A71B020C45A2CC /* ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-BGSMM_DevKit-BGSMM_DevKit-Info.plist"; sourceTree = "<group>"; };
 		60AD5E6DE4116D1542BF6AD2BA0C81F4 /* Pods-BGSMM_DevKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BGSMM_DevKit_Example-dummy.m"; sourceTree = "<group>"; };
 		71640552D02B17D1B473841227B518B4 /* BGSMM_DevKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = BGSMM_DevKit.modulemap; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		74F2E1DDACFD09E615F800EC8F1C3151 /* FindTopController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FindTopController.swift; path = Sources/BGSMM_DevKit/FindTopController.swift; sourceTree = "<group>"; };
 		8ECAA6AFEC07FFA9DC1BFA523F7D768F /* BGSMM_DevKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "BGSMM_DevKit-Info.plist"; sourceTree = "<group>"; };
 		92FF7DC14526B00D0D25771DEF2AE9C4 /* Pods-BGSMM_DevKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BGSMM_DevKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9599F8C1285B101225738CC43A5AE172 /* Pods-BGSMM_DevKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BGSMM_DevKit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		99D2895E5EA99617DFD3E6AB2AE54F91 /* Pods-BGSMM_DevKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BGSMM_DevKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGSMM_DevKit-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; };
 		A6665AF74E8156BCBC6194EAACF6E819 /* BGSMM_DevKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGSMM_DevKit.release.xcconfig; sourceTree = "<group>"; };
 		A7888B018D9F5001916B84A2D1F24159 /* BGSMM_DevKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BGSMM_DevKit.debug.xcconfig; sourceTree = "<group>"; };
 		AAD076461C691FBD969D98200BFD66AD /* Pods-BGSMM_DevKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BGSMM_DevKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -130,11 +132,21 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		44FD668F2DBA86550019D1DD /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				44FD66912DBA86BF0019D1DD /* FindTopController.swift */,
+				44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */,
+			);
+			name = Utility;
+			path = Sources/BGSMM_DevKit/Utility;
+			sourceTree = "<group>";
+		};
 		50A6CB930DEF44575BB026419D099B5F /* BGSMM_DevKit */ = {
 			isa = PBXGroup;
 			children = (
 				079BC224B4DE7EF2BCF178E3AD360E50 /* BGSMM_DevKit.swift */,
-				74F2E1DDACFD09E615F800EC8F1C3151 /* FindTopController.swift */,
+				44FD668F2DBA86550019D1DD /* Utility */,
 				07C224B6007EFDF701BC9B2AC1D01BF5 /* Alert */,
 				F2C338E0D320670A3A84CC291558EBE9 /* Extensions */,
 				42069D760D73D0D068D4C32AE51EFB42 /* Pod */,
@@ -348,7 +360,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/bash;
-			shellScript = "echo \"🚀 Run Script 실행됨! ${PROJECT_DIR}\"\n\nLIBRARY_ROOT=$(cd \"${PROJECT_DIR}/../..\" && pwd)\nPODSPEC_FILE=\"${LIBRARY_ROOT}/BGSMM_DevKit.podspec\"\n## PODSPEC_FILE=\"${PROJECT_DIR}/BGSMM_DevKit.podspec\"\n\n# 현재 버전 추출 (숫자 3개만 필터링)\nversionLine=$(grep 's.version' \"$PODSPEC_FILE\")\nversionString=$(echo \"$versionLine\" | grep -oE '[0-9]+\\.[0-9]+\\.[0-9]+')\n\nIFS='.' read -r major minor patch <<< \"$versionString\"\n\n# 패치 버전이 정수인지 확인\nif ! [[ \"$patch\" =~ ^[0-9]+$ ]]; then\n  echo \"❌ patch 버전이 정수가 아닙니다: $patch\"\n  exit 1\nfi\n\necho \"🔍 현재 버전 문자열: $versionString\"\necho \"🔍 분리된 버전(기존): major=$major, minor=$minor, patch=$patch\"\n\n# 패치 버전 증가\nnewPatch=$((patch + 1))\necho \"🫏 newPatch: $newPatch\"\nnewVersion=\"${major}.${minor}.${newPatch}\"\necho \"🔍 newVersion: ${newVersion}\"\n\n# 교체 (작은/큰따옴표 모두 대응)\nsed -i '' -E \"s/(s\\.version[[:space:]]*=[[:space:]]*['\\\"])$versionString(['\\\"])/\\1$newVersion\\2/\" \"$PODSPEC_FILE\"\n\n# 변경되었는지 확인\nif grep -q \"$newVersion\" \"$PODSPEC_FILE\"; then\n  echo \"✅ podspec 버전이 $versionString → $newVersion 으로 변경되었습니다.\"\nelse\n  echo \"❌ 버전 변경에 실패했습니다. 현재 버전: $versionString\"\n  exit 1  # 실패로 간주하고 빌드 중단\nfi\n\n";
+			shellScript = "echo \"🚀 Run Script 실행됨! ${PROJECT_DIR}\"\n\nLIBRARY_ROOT=$(cd \"${PROJECT_DIR}/../..\" && pwd)\nPODSPEC_FILE=\"${LIBRARY_ROOT}/BGSMM_DevKit.podspec\"\n## PODSPEC_FILE=\"${PROJECT_DIR}/BGSMM_DevKit.podspec\"\n\n# 현재 버전 추출 (숫자 3개만 필터링)\nversionLine=$(grep 's.version' \"$PODSPEC_FILE\")\nversionString=$(echo \"$versionLine\" | grep -oE '[0-9]+\\.[0-9]+\\.[0-9]+')\n\nIFS='.' read -r major minor patch <<< \"$versionString\"\n\n# 패치 버전이 정수인지 확인\nif ! [[ \"$patch\" =~ ^[0-9]+$ ]]; then\n  echo \"❌ patch 버전이 정수가 아닙니다: $patch\"\n  exit 1\nfi\n\n# echo \"🔍 현재 버전 문자열: $versionString\"\n# echo \"🔍 분리된 버전(기존): major=$major, minor=$minor, patch=$patch\"\n\n# 패치 버전 증가\nnewPatch=$((patch + 1))\n# echo \"🫏 newPatch: $newPatch\"\nnewVersion=\"${major}.${minor}.${newPatch}\"\n# echo \"🔍 newVersion: ${newVersion}\"\n\n# 교체 (작은/큰따옴표 모두 대응)\nsed -i '' -E \"s/(s\\.version[[:space:]]*=[[:space:]]*['\\\"])$versionString(['\\\"])/\\1$newVersion\\2/\" \"$PODSPEC_FILE\"\n\n# 변경되었는지 확인\nif grep -q \"$newVersion\" \"$PODSPEC_FILE\"; then\n  echo \"✅ podspec 버전이 $versionString → $newVersion 으로 변경되었습니다.\"\nelse\n  echo \"❌ 버전 변경에 실패했습니다. 현재 버전: $versionString\"\n  exit 1  # 실패로 간주하고 빌드 중단\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -368,10 +380,11 @@
 				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
 				74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */,
+				44FD66922DBA86BF0019D1DD /* FindTopController.swift in Sources */,
 				F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */,
-				964EAFCB6248EF9A028C71E1F3ABA46D /* FindTopController.swift in Sources */,
 				44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */,
 				44519D652DBA17780084A67A /* String+Localization.swift in Sources */,
+				44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */,
 				CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
