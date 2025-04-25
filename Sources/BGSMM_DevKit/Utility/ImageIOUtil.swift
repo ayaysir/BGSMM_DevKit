@@ -12,8 +12,7 @@ public struct ImageIOUtil {
   
   /// 이미지 저장
   func saveImage(_ image: UIImage, to url: URL) throws {
-    guard let data = image.pngData() ?? image.jpegData(compressionQuality: 1),
-          let documentDirectory = URL.documentsDirectory else {
+    guard let data = image.pngData() ?? image.jpegData(compressionQuality: 1) else {
       return
     }
     
@@ -22,8 +21,7 @@ public struct ImageIOUtil {
   
   /// UIImage로부터 섬네일 만들기
   func makeImageThumbnail(from image: UIImage, maxPixelSize: Int = 100) throws -> UIImage? {
-    guard let data = image.pngData() ?? image.jpegData(compressionQuality: 1),
-          let documentDirectory = URL.documentsDirectory else {
+    guard let data = image.pngData() ?? image.jpegData(compressionQuality: 1) else {
       return nil
     }
     

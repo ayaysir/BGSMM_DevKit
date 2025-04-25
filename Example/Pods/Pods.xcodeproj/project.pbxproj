@@ -14,8 +14,16 @@
 		44519D652DBA17780084A67A /* String+Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D642DBA176F0084A67A /* String+Localization.swift */; };
 		44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44519D692DBA1ABE0084A67A /* Bundle+.swift */; };
 		44519D772DBA288E0084A67A /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = B658570D3DF2761079C7AA8D73E6470E /* Localizable.strings */; };
+		44AFCE4D2DBBEBF6004890FC /* FileManager+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */; };
+		44AFCE4F2DBBEC79004890FC /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE4E2DBBEC76004890FC /* Int+.swift */; };
+		44AFCE532DBBED1C004890FC /* Sttring+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */; };
+		44AFCE552DBBEE73004890FC /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE542DBBEE6A004890FC /* UIApplication+.swift */; };
+		44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE562DBBEF4D004890FC /* UIButton+.swift */; };
+		44AFCE592DBBF10E004890FC /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE582DBBF103004890FC /* UIImageView.swift */; };
+		44AFCE5B2DBBF1E8004890FC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */; };
+		44AFCE5D2DBBF27E004890FC /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */; };
 		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
-		44FD66922DBA86BF0019D1DD /* FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* FindTopController.swift */; };
+		44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */; };
 		44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD669C2DBA8B400019D1DD /* Calendar+.swift */; };
 		44FD66A12DBA8C0B0019D1DD /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66A02DBA8C0B0019D1DD /* Date+.swift */; };
 		44FD66A32DBA8DB10019D1DD /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */; };
@@ -62,8 +70,16 @@
 		44519D642DBA176F0084A67A /* String+Localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localization.swift"; sourceTree = "<group>"; };
 		44519D662DBA17DD0084A67A /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44519D692DBA1ABE0084A67A /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
+		44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+.swift"; sourceTree = "<group>"; };
+		44AFCE4E2DBBEC76004890FC /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sttring+Subscript.swift"; sourceTree = "<group>"; };
+		44AFCE542DBBEE6A004890FC /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		44AFCE562DBBEF4D004890FC /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		44AFCE582DBBF103004890FC /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
 		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
-		44FD66912DBA86BF0019D1DD /* FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindTopController.swift; sourceTree = "<group>"; };
+		44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.FindTopController.swift; sourceTree = "<group>"; };
 		44FD669C2DBA8B400019D1DD /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
 		44FD66A02DBA8C0B0019D1DD /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
@@ -169,7 +185,6 @@
 				44FD66B32DBA93190019D1DD /* ImageIOUtil.swift */,
 				44FD66AF2DBA92830019D1DD /* ImageHeaderData.swift */,
 				44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */,
-				44FD66912DBA86BF0019D1DD /* FindTopController.swift */,
 				44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */,
 			);
 			name = Utility;
@@ -264,7 +279,16 @@
 		F2C338E0D320670A3A84CC291558EBE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44AFCE582DBBF103004890FC /* UIImageView.swift */,
+				44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */,
+				44AFCE542DBBEE6A004890FC /* UIApplication+.swift */,
+				44AFCE562DBBEF4D004890FC /* UIButton+.swift */,
+				44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */,
+				44AFCE4E2DBBEC76004890FC /* Int+.swift */,
+				44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */,
+				44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */,
 				44FD66C32DBAA3670019D1DD /* UserDefaults+ObjectSavable.swift */,
+				44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */,
 				44FD66C12DBAA1D20019D1DD /* Decimal+.swift */,
 				44FD66BF2DBAA0770019D1DD /* CGSize+.swift */,
 				44FD66BD2DBA9E7D0019D1DD /* UITextField+.swift */,
@@ -423,19 +447,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FD66BC2DBA9DFB0019D1DD /* FirstrunUtil.swift in Sources */,
+				44AFCE532DBBED1C004890FC /* Sttring+Subscript.swift in Sources */,
 				44FD66A12DBA8C0B0019D1DD /* Date+.swift in Sources */,
 				44FD66C02DBAA07F0019D1DD /* CGSize+.swift in Sources */,
+				44AFCE4D2DBBEBF6004890FC /* FileManager+.swift in Sources */,
 				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
 				44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
+				44AFCE552DBBEE73004890FC /* UIApplication+.swift in Sources */,
 				44FD66AE2DBA91FC0019D1DD /* UIDevice+.swift in Sources */,
 				44FD66B42DBA93200019D1DD /* ImageIOUtil.swift in Sources */,
 				44FD66B82DBA94A40019D1DD /* ImageFormat.swift in Sources */,
 				74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */,
 				44FD66BE2DBA9E8B0019D1DD /* UITextField+.swift in Sources */,
 				44FD66B02DBA92830019D1DD /* ImageHeaderData.swift in Sources */,
+				44AFCE5B2DBBF1E8004890FC /* UIViewController.swift in Sources */,
+				44AFCE5D2DBBF27E004890FC /* UserDefaults+.swift in Sources */,
 				44FD66C42DBAA3740019D1DD /* UserDefaults+ObjectSavable.swift in Sources */,
-				44FD66922DBA86BF0019D1DD /* FindTopController.swift in Sources */,
+				44AFCE592DBBF10E004890FC /* UIImageView.swift in Sources */,
+				44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */,
+				44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */,
+				44AFCE4F2DBBEC79004890FC /* Int+.swift in Sources */,
 				F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */,
 				44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */,
 				44FD66BA2DBA95FA0019D1DD /* String+Contains.swift in Sources */,
