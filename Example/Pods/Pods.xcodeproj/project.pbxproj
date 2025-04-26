@@ -19,9 +19,13 @@
 		44AFCE532DBBED1C004890FC /* Sttring+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */; };
 		44AFCE552DBBEE73004890FC /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE542DBBEE6A004890FC /* UIApplication+.swift */; };
 		44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE562DBBEF4D004890FC /* UIButton+.swift */; };
-		44AFCE592DBBF10E004890FC /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE582DBBF103004890FC /* UIImageView.swift */; };
+		44AFCE592DBBF10E004890FC /* UIImageView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE582DBBF103004890FC /* UIImageView+.swift */; };
 		44AFCE5B2DBBF1E8004890FC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */; };
 		44AFCE5D2DBBF27E004890FC /* UserDefaults+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */; };
+		44AFCE682DBD3D4B004890FC /* Array+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE672DBD3D47004890FC /* Array+.swift */; };
+		44AFCE6A2DBD3EA8004890FC /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE692DBD3EA2004890FC /* UIImage+.swift */; };
+		44AFCE6C2DBD42CB004890FC /* String+StaticVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */; };
+		44AFCE6E2DBD4442004890FC /* PhotoAuthUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */; };
 		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
 		44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */; };
 		44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD669C2DBA8B400019D1DD /* Calendar+.swift */; };
@@ -75,9 +79,14 @@
 		44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sttring+Subscript.swift"; sourceTree = "<group>"; };
 		44AFCE542DBBEE6A004890FC /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 		44AFCE562DBBEF4D004890FC /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
-		44AFCE582DBBF103004890FC /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		44AFCE582DBBF103004890FC /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+.swift"; sourceTree = "<group>"; };
+		44AFCE672DBD3D47004890FC /* Array+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+.swift"; sourceTree = "<group>"; };
+		44AFCE692DBD3EA2004890FC /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
+		44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StaticVars.swift"; sourceTree = "<group>"; };
+		44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAuthUtil.swift; sourceTree = "<group>"; };
+		44AFCE6F2DBD45D1004890FC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
 		44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.FindTopController.swift; sourceTree = "<group>"; };
 		44FD669C2DBA8B400019D1DD /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
@@ -181,6 +190,7 @@
 		44FD668F2DBA86550019D1DD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */,
 				44FD66B72DBA94A10019D1DD /* ImageFormat.swift */,
 				44FD66B32DBA93190019D1DD /* ImageIOUtil.swift */,
 				44FD66AF2DBA92830019D1DD /* ImageHeaderData.swift */,
@@ -279,29 +289,32 @@
 		F2C338E0D320670A3A84CC291558EBE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				44AFCE582DBBF103004890FC /* UIImageView.swift */,
-				44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */,
+				44AFCE672DBD3D47004890FC /* Array+.swift */,
+				44519D692DBA1ABE0084A67A /* Bundle+.swift */,
+				44FD669C2DBA8B400019D1DD /* Calendar+.swift */,
+				44FD66BF2DBAA0770019D1DD /* CGSize+.swift */,
+				D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */,
+				44FD66B52DBA94110019D1DD /* Data+ImageFormat.swift */,
+				44FD66A02DBA8C0B0019D1DD /* Date+.swift */,
+				44FD66C12DBAA1D20019D1DD /* Decimal+.swift */,
+				44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */,
+				44FD66BB2DBA9DF80019D1DD /* FirstrunUtil.swift */,
+				44AFCE4E2DBBEC76004890FC /* Int+.swift */,
+				44FD66B92DBA95F70019D1DD /* String+Contains.swift */,
+				44519D642DBA176F0084A67A /* String+Localization.swift */,
+				44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */,
+				44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */,
 				44AFCE542DBBEE6A004890FC /* UIApplication+.swift */,
 				44AFCE562DBBEF4D004890FC /* UIButton+.swift */,
-				44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */,
-				44AFCE4E2DBBEC76004890FC /* Int+.swift */,
-				44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */,
-				44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */,
-				44FD66C32DBAA3670019D1DD /* UserDefaults+ObjectSavable.swift */,
-				44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */,
-				44FD66C12DBAA1D20019D1DD /* Decimal+.swift */,
-				44FD66BF2DBAA0770019D1DD /* CGSize+.swift */,
-				44FD66BD2DBA9E7D0019D1DD /* UITextField+.swift */,
-				44FD66BB2DBA9DF80019D1DD /* FirstrunUtil.swift */,
-				44FD66B92DBA95F70019D1DD /* String+Contains.swift */,
-				44FD66B52DBA94110019D1DD /* Data+ImageFormat.swift */,
-				44FD66B12DBA92D00019D1DD /* URL+.swift */,
 				44FD66AD2DBA91F60019D1DD /* UIDevice+.swift */,
-				44FD669C2DBA8B400019D1DD /* Calendar+.swift */,
-				44519D692DBA1ABE0084A67A /* Bundle+.swift */,
-				44519D642DBA176F0084A67A /* String+Localization.swift */,
-				44FD66A02DBA8C0B0019D1DD /* Date+.swift */,
-				D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */,
+				44AFCE582DBBF103004890FC /* UIImageView+.swift */,
+				44AFCE692DBD3EA2004890FC /* UIImage+.swift */,
+				44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */,
+				44FD66BD2DBA9E7D0019D1DD /* UITextField+.swift */,
+				44AFCE5A2DBBF1E5004890FC /* UIViewController.swift */,
+				44FD66B12DBA92D00019D1DD /* URL+.swift */,
+				44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */,
+				44FD66C32DBAA3670019D1DD /* UserDefaults+ObjectSavable.swift */,
 			);
 			name = Extensions;
 			path = Sources/BGSMM_DevKit/Extensions;
@@ -384,6 +397,7 @@
 				Base,
 				en,
 				ko,
+				ja,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 			productRefGroup = D2182B4FC94C9CA564C55F1B85115A36 /* Products */;
@@ -447,10 +461,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FD66BC2DBA9DFB0019D1DD /* FirstrunUtil.swift in Sources */,
+				44AFCE682DBD3D4B004890FC /* Array+.swift in Sources */,
 				44AFCE532DBBED1C004890FC /* Sttring+Subscript.swift in Sources */,
+				44AFCE6A2DBD3EA8004890FC /* UIImage+.swift in Sources */,
+				44AFCE6C2DBD42CB004890FC /* String+StaticVars.swift in Sources */,
 				44FD66A12DBA8C0B0019D1DD /* Date+.swift in Sources */,
 				44FD66C02DBAA07F0019D1DD /* CGSize+.swift in Sources */,
 				44AFCE4D2DBBEBF6004890FC /* FileManager+.swift in Sources */,
+				44AFCE6E2DBD4442004890FC /* PhotoAuthUtil.swift in Sources */,
 				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
 				44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
@@ -464,7 +482,7 @@
 				44AFCE5B2DBBF1E8004890FC /* UIViewController.swift in Sources */,
 				44AFCE5D2DBBF27E004890FC /* UserDefaults+.swift in Sources */,
 				44FD66C42DBAA3740019D1DD /* UserDefaults+ObjectSavable.swift in Sources */,
-				44AFCE592DBBF10E004890FC /* UIImageView.swift in Sources */,
+				44AFCE592DBBF10E004890FC /* UIImageView+.swift in Sources */,
 				44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */,
 				44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */,
 				44AFCE4F2DBBEC79004890FC /* Int+.swift in Sources */,
@@ -498,6 +516,7 @@
 			children = (
 				35F1F920FB15E08BA11EA77CBA4CFC36 /* Localizable.strings */,
 				44519D662DBA17DD0084A67A /* ko */,
+				44AFCE6F2DBD45D1004890FC /* ja */,
 			);
 			name = Localizable.strings;
 			path = .;

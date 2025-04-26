@@ -1,5 +1,5 @@
 //
-//  UIImageView.swift
+//  UIImageView+.swift
 //  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/26/25.
@@ -8,7 +8,7 @@
 #if os(iOS) || os(tvOS) || os(visionOS)
 import UIKit
 
-extension UIImageView {
+public extension UIImageView {
   /// 이미지에 Corner Radius 지정
   @IBInspectable var roundImage: CGFloat {
     set {

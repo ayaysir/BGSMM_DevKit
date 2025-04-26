@@ -1,0 +1,17 @@
+"loc.alert.caution" = "Caution";
+"loc.alert.ok" = "OK";
+"loc.alert.no" = "No";
+"loc.alert.yes" = "Yes";
+"loc.alert.cancel" = "Cancel";
+
+"loc.done" = "Done";
+
+"loc.camera" = "カメラ";
+"loc.photo_library" = "写真ライブラリ";
+"loc.no_permission_status" = "権限ステータスなし";
+"loc.not_determined_message" = "%@の権限設定を変更してもよろしいですか？";
+"loc.restricted_message" = "システムによってアクセスが拒否されました。";
+"loc.permission_denied" = "権限が拒否されました";
+"loc.denied_message" = "%@の権限は拒否され、使用できません。%@の権限設定を変更しますか？";
+"loc.unknown" = "不明";
+"loc.camera_unavailable" = "カメラの使用はできません。";

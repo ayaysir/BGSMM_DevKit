@@ -5,3 +5,13 @@
 "loc.alert.cancel" = "Cancel";
 
 "loc.done" = "Done";
+
+"loc.camera" = "Camera";
+"loc.photo_library" = "Photo Library";
+"loc.no_permission_status" = "No permission status";
+"loc.not_determined_message" = "Would you like to change the %@ permission settings?";
+"loc.restricted_message" = "Access was denied by the system.";
+"loc.permission_denied" = "Permission denied";
+"loc.denied_message" = "The %@ permission was denied and cannot be used. Would you like to change the %@ permission settings?";
+"loc.unknown" = "Unknown";
+"loc.camera_unavailable" = "Camera cannot be used.";
