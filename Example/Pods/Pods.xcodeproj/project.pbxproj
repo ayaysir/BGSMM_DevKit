@@ -44,6 +44,9 @@
 		44AFCEB52DBE0A11004890FC /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEB42DBE0A11004890FC /* StringUtil.swift */; };
 		44AFCEB72DBE0B54004890FC /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEB62DBE0B4D004890FC /* ColorUtility.swift */; };
 		44AFCEB92DBE0CC5004890FC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEB82DBE0CC5004890FC /* UIColor+.swift */; };
+		44AFCECD2DBE1036004890FC /* JSONUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCECC2DBE102F004890FC /* JSONUtil.swift */; };
+		44AFCECF2DBE11D3004890FC /* TextIOUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCECE2DBE11C7004890FC /* TextIOUtil.swift */; };
+		44AFCEDC2DBE12CC004890FC /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEDB2DBE12CC004890FC /* SimpleAlert.swift */; };
 		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
 		44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */; };
 		44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD669C2DBA8B400019D1DD /* Calendar+.swift */; };
@@ -64,7 +67,6 @@
 		60A3A251C7E95FC64AC887D0B7EC153B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D85383842F05055D3386525746D8F9 /* BGSMM_DevKit-dummy.m */; };
 		B66ACE3B2B0430D2F0711802BA993E7A /* BGSMM_DevKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B964BA863B02FF7C0868B9D102BDD1A /* BGSMM_DevKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A69BB2C672DCF8F8D215935DFD74780 /* SimpleAlert.swift */; };
 		F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +87,6 @@
 		1528AD90C9407E12DE6D01DA7346A965 /* Pods-BGSMM_DevKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BGSMM_DevKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1737E842715DE3E5C9AA11E3198954B8 /* Pods-BGSMM_DevKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BGSMM_DevKit_Example-Info.plist"; sourceTree = "<group>"; };
 		18D85383842F05055D3386525746D8F9 /* BGSMM_DevKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BGSMM_DevKit-dummy.m"; sourceTree = "<group>"; };
-		2A69BB2C672DCF8F8D215935DFD74780 /* SimpleAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		35F1F920FB15E08BA11EA77CBA4CFC36 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		39F8513314CD1641ADFE38B8B0F34FFE /* BGSMM_DevKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BGSMM_DevKit-prefix.pch"; sourceTree = "<group>"; };
 		3EF1996FCB51A59B27415ED508646D86 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -123,6 +124,9 @@
 		44AFCEB42DBE0A11004890FC /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
 		44AFCEB62DBE0B4D004890FC /* ColorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
 		44AFCEB82DBE0CC5004890FC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		44AFCECC2DBE102F004890FC /* JSONUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtil.swift; sourceTree = "<group>"; };
+		44AFCECE2DBE11C7004890FC /* TextIOUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextIOUtil.swift; sourceTree = "<group>"; };
+		44AFCEDB2DBE12CC004890FC /* SimpleAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleAlert.swift; sourceTree = "<group>"; };
 		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
 		44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.FindTopController.swift; sourceTree = "<group>"; };
 		44FD669C2DBA8B400019D1DD /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
@@ -180,15 +184,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07C224B6007EFDF701BC9B2AC1D01BF5 /* Alert */ = {
-			isa = PBXGroup;
-			children = (
-				2A69BB2C672DCF8F8D215935DFD74780 /* SimpleAlert.swift */,
-			);
-			name = Alert;
-			path = Sources/BGSMM_DevKit/Alert;
-			sourceTree = "<group>";
-		};
 		25E6F832DE9230AB5966437A7BB9F725 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +221,10 @@
 		44FD668F2DBA86550019D1DD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				44AFCECE2DBE11C7004890FC /* TextIOUtil.swift */,
+				44AFCECC2DBE102F004890FC /* JSONUtil.swift */,
 				44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */,
+				44AFCEDB2DBE12CC004890FC /* SimpleAlert.swift */,
 				44AFCEB62DBE0B4D004890FC /* ColorUtility.swift */,
 				44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */,
 				44FD66BB2DBA9DF80019D1DD /* FirstrunUtil.swift */,
@@ -247,7 +245,6 @@
 			children = (
 				079BC224B4DE7EF2BCF178E3AD360E50 /* BGSMM_DevKit.swift */,
 				44FD668F2DBA86550019D1DD /* Utility */,
-				07C224B6007EFDF701BC9B2AC1D01BF5 /* Alert */,
 				F2C338E0D320670A3A84CC291558EBE9 /* Extensions */,
 				42069D760D73D0D068D4C32AE51EFB42 /* Pod */,
 				79D7A5BD2B66330663564991AFA287FD /* Resources */,
@@ -546,7 +543,9 @@
 				44AFCE5D2DBBF27E004890FC /* UserDefaults+.swift in Sources */,
 				44FD66C42DBAA3740019D1DD /* UserDefaults+ObjectSavable.swift in Sources */,
 				44AFCE592DBBF10E004890FC /* UIImageView+.swift in Sources */,
+				44AFCECD2DBE1036004890FC /* JSONUtil.swift in Sources */,
 				44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */,
+				44AFCECF2DBE11D3004890FC /* TextIOUtil.swift in Sources */,
 				44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */,
 				44AFCE4F2DBBEC79004890FC /* Int+.swift in Sources */,
 				44AFCE7C2DBDF47D004890FC /* CaseIterable+.swift in Sources */,
@@ -558,6 +557,7 @@
 				44FD66BA2DBA95FA0019D1DD /* String+Contains.swift in Sources */,
 				44FD66C22DBAA1D70019D1DD /* Decimal+.swift in Sources */,
 				44AFCE8A2DBDFA4C004890FC /* UISegmentControl+.swift in Sources */,
+				44AFCEDC2DBE12CC004890FC /* SimpleAlert.swift in Sources */,
 				44FD66B22DBA92D20019D1DD /* URL+.swift in Sources */,
 				44519D652DBA17780084A67A /* String+Localization.swift in Sources */,
 				44FD66A32DBA8DB10019D1DD /* DateUtil.swift in Sources */,
@@ -565,7 +565,6 @@
 				44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */,
 				44AFCE802DBDF654004890FC /* FloatingPoint+.swift in Sources */,
 				44AFCE842DBDF729004890FC /* NSObject.swift in Sources */,
-				CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */,
 				44AFCE9B2DBE00FA004890FC /* Double+.swift in Sources */,
 				44FD66B62DBA94140019D1DD /* Data+ImageFormat.swift in Sources */,
 			);
