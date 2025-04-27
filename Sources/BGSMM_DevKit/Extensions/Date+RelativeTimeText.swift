@@ -1,6 +1,6 @@
 //
 //  Date+relativeTimeText.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/27/25.
 //
@@ -53,7 +53,7 @@ public extension Date {
   /// 현재 날짜 기준으로 상대적인 시간을 문자열로 반환합니다.
   ///
   /// - 예: "2 years ago", "Yesterday", "Just now" 등
-  var relativeTime: String {
+  var relativeTimeText: String {
     if yearsFromNow > 0 {
       return String(
         format: "loc.n_years_ago".localized,

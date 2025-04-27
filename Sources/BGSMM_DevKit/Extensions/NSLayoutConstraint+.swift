@@ -5,7 +5,8 @@
 //  Created by 윤범태 on 4/27/25.
 //
 
-import Foundation
+#if os(iOS) || os(tvOS) || os(visionOS)
+import UIKit
 
 extension NSLayoutConstraint {
   /**
@@ -37,3 +38,5 @@ extension NSLayoutConstraint {
     return newConstraint
   }
 }
+
+#endif

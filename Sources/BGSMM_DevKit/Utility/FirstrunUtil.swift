@@ -7,7 +7,7 @@
 
 import Foundation
 
-func checkAppStatus(firstrun: () -> (), updated: () -> (), nothingChanged: () -> ()) {
+public func checkAppStatus(firstrun: () -> (), updated: () -> (), nothingChanged: () -> ()) {
   let currentVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String
   let versionOfLastRun = UserDefaults.standard.object(forKey: "VersionOfLastRun") as? String
   

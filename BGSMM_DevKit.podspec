@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'BGSMM_DevKit'
-  s.version          = '1.1.28'
+  s.version          = '1.1.33'
   s.summary          = 'BGSMM_DevKit is a collection of various utilities that I will use when developing.'
 
   # Set swift version

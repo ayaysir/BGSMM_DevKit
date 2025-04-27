@@ -5,7 +5,7 @@
 //  Created by 윤범태 on 4/27/25.
 //
 
-extension Sequence {
+public extension Sequence {
   
   /**
    시퀀스의 각 요소를 기준으로 이전 요소, 현재 요소, 다음 요소를 함께 반환합니다.
