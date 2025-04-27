@@ -37,6 +37,13 @@
 		44AFCE8C2DBDFAE4004890FC /* UIUserInterfaceStyle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE8B2DBDFADB004890FC /* UIUserInterfaceStyle+.swift */; };
 		44AFCE8E2DBDFEA7004890FC /* HapticUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE8D2DBDFE9F004890FC /* HapticUtil.swift */; };
 		44AFCE902DBDFF1E004890FC /* GoSettingUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE8F2DBDFF17004890FC /* GoSettingUtil.swift */; };
+		44AFCE9B2DBE00FA004890FC /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE9A2DBE00F5004890FC /* Double+.swift */; };
+		44AFCE9D2DBE036A004890FC /* SwiftUI.ColorScheme+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE9C2DBE0361004890FC /* SwiftUI.ColorScheme+.swift */; };
+		44AFCEA82DBE0675004890FC /* String+Excerpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEA72DBE066B004890FC /* String+Excerpt.swift */; };
+		44AFCEAA2DBE072E004890FC /* SwiftUI.Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEA92DBE0725004890FC /* SwiftUI.Color+.swift */; };
+		44AFCEB52DBE0A11004890FC /* StringUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEB42DBE0A11004890FC /* StringUtil.swift */; };
+		44AFCEB72DBE0B54004890FC /* ColorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEB62DBE0B4D004890FC /* ColorUtility.swift */; };
+		44AFCEB92DBE0CC5004890FC /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCEB82DBE0CC5004890FC /* UIColor+.swift */; };
 		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
 		44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */; };
 		44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD669C2DBA8B400019D1DD /* Calendar+.swift */; };
@@ -109,6 +116,13 @@
 		44AFCE8B2DBDFADB004890FC /* UIUserInterfaceStyle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIUserInterfaceStyle+.swift"; sourceTree = "<group>"; };
 		44AFCE8D2DBDFE9F004890FC /* HapticUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticUtil.swift; sourceTree = "<group>"; };
 		44AFCE8F2DBDFF17004890FC /* GoSettingUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoSettingUtil.swift; sourceTree = "<group>"; };
+		44AFCE9A2DBE00F5004890FC /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
+		44AFCE9C2DBE0361004890FC /* SwiftUI.ColorScheme+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI.ColorScheme+.swift"; sourceTree = "<group>"; };
+		44AFCEA72DBE066B004890FC /* String+Excerpt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Excerpt.swift"; sourceTree = "<group>"; };
+		44AFCEA92DBE0725004890FC /* SwiftUI.Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftUI.Color+.swift"; sourceTree = "<group>"; };
+		44AFCEB42DBE0A11004890FC /* StringUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringUtil.swift; sourceTree = "<group>"; };
+		44AFCEB62DBE0B4D004890FC /* ColorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtility.swift; sourceTree = "<group>"; };
+		44AFCEB82DBE0CC5004890FC /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
 		44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.FindTopController.swift; sourceTree = "<group>"; };
 		44FD669C2DBA8B400019D1DD /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
@@ -212,15 +226,17 @@
 		44FD668F2DBA86550019D1DD /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				44AFCE8D2DBDFE9F004890FC /* HapticUtil.swift */,
-				44FD66BB2DBA9DF80019D1DD /* FirstrunUtil.swift */,
-				44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */,
-				44AFCE8F2DBDFF17004890FC /* GoSettingUtil.swift */,
-				44FD66B72DBA94A10019D1DD /* ImageFormat.swift */,
-				44FD66B32DBA93190019D1DD /* ImageIOUtil.swift */,
-				44FD66AF2DBA92830019D1DD /* ImageHeaderData.swift */,
-				44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */,
 				44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */,
+				44AFCEB62DBE0B4D004890FC /* ColorUtility.swift */,
+				44FD66A22DBA8DAE0019D1DD /* DateUtil.swift */,
+				44FD66BB2DBA9DF80019D1DD /* FirstrunUtil.swift */,
+				44AFCE8F2DBDFF17004890FC /* GoSettingUtil.swift */,
+				44AFCE8D2DBDFE9F004890FC /* HapticUtil.swift */,
+				44FD66B72DBA94A10019D1DD /* ImageFormat.swift */,
+				44FD66AF2DBA92830019D1DD /* ImageHeaderData.swift */,
+				44FD66B32DBA93190019D1DD /* ImageIOUtil.swift */,
+				44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */,
+				44AFCEB42DBE0A11004890FC /* StringUtil.swift */,
 			);
 			name = Utility;
 			path = Sources/BGSMM_DevKit/Utility;
@@ -314,36 +330,41 @@
 		F2C338E0D320670A3A84CC291558EBE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				44AFCE7B2DBDF472004890FC /* CaseIterable+.swift */,
 				44AFCE672DBD3D47004890FC /* Array+.swift */,
 				44519D692DBA1ABE0084A67A /* Bundle+.swift */,
 				44FD669C2DBA8B400019D1DD /* Calendar+.swift */,
+				44AFCE7B2DBDF472004890FC /* CaseIterable+.swift */,
 				44FD66BF2DBAA0770019D1DD /* CGSize+.swift */,
 				D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */,
 				44FD66B52DBA94110019D1DD /* Data+ImageFormat.swift */,
 				44FD66A02DBA8C0B0019D1DD /* Date+.swift */,
 				44AFCE7D2DBDF51B004890FC /* Date+RelativeTimeText.swift */,
 				44FD66C12DBAA1D20019D1DD /* Decimal+.swift */,
+				44AFCE9A2DBE00F5004890FC /* Double+.swift */,
 				44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */,
-				44AFCE4E2DBBEC76004890FC /* Int+.swift */,
 				44AFCE7F2DBDF64E004890FC /* FloatingPoint+.swift */,
+				44AFCE4E2DBBEC76004890FC /* Int+.swift */,
 				44AFCE812DBDF6CB004890FC /* NSLayoutConstraint+.swift */,
-				44FD66B92DBA95F70019D1DD /* String+Contains.swift */,
 				44AFCE832DBDF724004890FC /* NSObject.swift */,
-				44519D642DBA176F0084A67A /* String+Localization.swift */,
 				44AFCE852DBDF78C004890FC /* Sequence+.swift */,
-				44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */,
+				44FD66B92DBA95F70019D1DD /* String+Contains.swift */,
+				44AFCEA72DBE066B004890FC /* String+Excerpt.swift */,
+				44519D642DBA176F0084A67A /* String+Localization.swift */,
 				44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */,
+				44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */,
+				44AFCEA92DBE0725004890FC /* SwiftUI.Color+.swift */,
+				44AFCE9C2DBE0361004890FC /* SwiftUI.ColorScheme+.swift */,
 				44AFCE542DBBEE6A004890FC /* UIApplication+.swift */,
-				44AFCE562DBBEF4D004890FC /* UIButton+.swift */,
 				44AFCE872DBDF9B6004890FC /* UIBarButtonItem+.swift */,
-				44AFCE892DBDFA41004890FC /* UISegmentControl+.swift */,
-				44AFCE8B2DBDFADB004890FC /* UIUserInterfaceStyle+.swift */,
+				44AFCE562DBBEF4D004890FC /* UIButton+.swift */,
+				44AFCEB82DBE0CC5004890FC /* UIColor+.swift */,
 				44FD66AD2DBA91F60019D1DD /* UIDevice+.swift */,
-				44AFCE582DBBF103004890FC /* UIImageView+.swift */,
 				44AFCE692DBD3EA2004890FC /* UIImage+.swift */,
+				44AFCE582DBBF103004890FC /* UIImageView+.swift */,
 				44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */,
+				44AFCE892DBDFA41004890FC /* UISegmentControl+.swift */,
 				44FD66BD2DBA9E7D0019D1DD /* UITextField+.swift */,
+				44AFCE8B2DBDFADB004890FC /* UIUserInterfaceStyle+.swift */,
 				44AFCE5A2DBBF1E5004890FC /* UIViewController+.swift */,
 				44FD66B12DBA92D00019D1DD /* URL+.swift */,
 				44AFCE5C2DBBF274004890FC /* UserDefaults+.swift */,
@@ -493,6 +514,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				44AFCEB52DBE0A11004890FC /* StringUtil.swift in Sources */,
 				44AFCE882DBDF9BD004890FC /* UIBarButtonItem+.swift in Sources */,
 				44FD66BC2DBA9DFB0019D1DD /* FirstrunUtil.swift in Sources */,
 				44AFCE682DBD3D4B004890FC /* Array+.swift in Sources */,
@@ -505,15 +527,18 @@
 				44AFCE6E2DBD4442004890FC /* PhotoAuthUtil.swift in Sources */,
 				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
 				44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */,
+				44AFCEA82DBE0675004890FC /* String+Excerpt.swift in Sources */,
 				44AFCE822DBDF6D6004890FC /* NSLayoutConstraint+.swift in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
 				44AFCE552DBBEE73004890FC /* UIApplication+.swift in Sources */,
+				44AFCEB92DBE0CC5004890FC /* UIColor+.swift in Sources */,
 				44FD66AE2DBA91FC0019D1DD /* UIDevice+.swift in Sources */,
 				44FD66B42DBA93200019D1DD /* ImageIOUtil.swift in Sources */,
 				44FD66B82DBA94A40019D1DD /* ImageFormat.swift in Sources */,
 				44AFCE8E2DBDFEA7004890FC /* HapticUtil.swift in Sources */,
 				74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */,
 				44AFCE862DBDF795004890FC /* Sequence+.swift in Sources */,
+				44AFCEB72DBE0B54004890FC /* ColorUtility.swift in Sources */,
 				44FD66BE2DBA9E8B0019D1DD /* UITextField+.swift in Sources */,
 				44FD66B02DBA92830019D1DD /* ImageHeaderData.swift in Sources */,
 				44AFCE7E2DBDF52C004890FC /* Date+RelativeTimeText.swift in Sources */,
@@ -525,7 +550,9 @@
 				44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */,
 				44AFCE4F2DBBEC79004890FC /* Int+.swift in Sources */,
 				44AFCE7C2DBDF47D004890FC /* CaseIterable+.swift in Sources */,
+				44AFCE9D2DBE036A004890FC /* SwiftUI.ColorScheme+.swift in Sources */,
 				44AFCE902DBDFF1E004890FC /* GoSettingUtil.swift in Sources */,
+				44AFCEAA2DBE072E004890FC /* SwiftUI.Color+.swift in Sources */,
 				F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */,
 				44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */,
 				44FD66BA2DBA95FA0019D1DD /* String+Contains.swift in Sources */,
@@ -539,6 +566,7 @@
 				44AFCE802DBDF654004890FC /* FloatingPoint+.swift in Sources */,
 				44AFCE842DBDF729004890FC /* NSObject.swift in Sources */,
 				CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */,
+				44AFCE9B2DBE00FA004890FC /* Double+.swift in Sources */,
 				44FD66B62DBA94140019D1DD /* Data+ImageFormat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
