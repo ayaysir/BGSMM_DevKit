@@ -8,7 +8,7 @@
 #if os(iOS)
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
   /// 내비게이션 바의 높이를 반환
   var topBarHeight: CGFloat {
     var top = self.navigationController?.navigationBar.frame.height ?? 0.0

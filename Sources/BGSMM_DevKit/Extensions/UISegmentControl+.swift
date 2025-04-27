@@ -10,7 +10,7 @@ import UIKit
 
 extension UISegmentedControl {
   /// 기존 세그먼트를 새로운 세그먼트로 강제 대체합니다.
-  func replaceSegments(segments: Array<String>) {
+  public func replaceSegments(segments: Array<String>) {
     self.removeAllSegments()
     
     for segment in segments {

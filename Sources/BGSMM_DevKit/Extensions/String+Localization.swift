@@ -1,6 +1,6 @@
 //
 //  String+Localization.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/24/25.
 //

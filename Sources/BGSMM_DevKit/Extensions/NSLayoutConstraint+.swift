@@ -8,7 +8,7 @@
 #if os(iOS) || os(tvOS) || os(visionOS)
 import UIKit
 
-extension NSLayoutConstraint {
+public extension NSLayoutConstraint {
   /**
    Change multiplier constraint.
    https://stackoverflow.com/questions/19593641

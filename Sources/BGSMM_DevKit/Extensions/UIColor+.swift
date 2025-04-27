@@ -75,7 +75,7 @@ extension UIColor: HasColorTransformations {
     )
   }
   
-  func hex(isAlphaIncluded: Bool = false) -> String? {
+  public func hex(isAlphaIncluded: Bool = false) -> String? {
     guard let components = cgColor.components, components.count >= 3 else {
       return nil
     }

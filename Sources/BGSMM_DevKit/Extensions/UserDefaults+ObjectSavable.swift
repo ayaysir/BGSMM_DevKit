@@ -1,6 +1,6 @@
 //
 //  UserDefaults+ObjectSavable.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/25/25.
 //
@@ -17,13 +17,13 @@ enum ObjectSavableError: String, LocalizedError {
   case noValue = "No data object found for the given key"
   case unableToDecode = "Unable to decode object into given type"
   
-  var errorDescription: String? {
+  public var errorDescription: String? {
     rawValue
   }
 }
 
 extension UserDefaults: ObjectSavable {
-  func setObject<Object>(_ object: Object, forKey: String) throws where Object: Encodable {
+  public func setObject<Object>(_ object: Object, forKey: String) throws where Object: Encodable {
     let encoder = JSONEncoder()
     do {
       let data = try encoder.encode(object)
@@ -33,7 +33,7 @@ extension UserDefaults: ObjectSavable {
     }
   }
   
-  func getObject<Object>(forKey: String, castTo type: Object.Type) throws -> Object where Object: Decodable {
+  public func getObject<Object>(forKey: String, castTo type: Object.Type) throws -> Object where Object: Decodable {
     guard let data = data(forKey: forKey) else { throw ObjectSavableError.noValue }
     let decoder = JSONDecoder()
     do {

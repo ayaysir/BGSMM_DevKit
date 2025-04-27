@@ -9,7 +9,7 @@
 import UIKit
 
 @available(iOS 12.0, *)
-extension UIUserInterfaceStyle {
+public extension UIUserInterfaceStyle {
   private var localizedMenuText: String {
     switch self {
     case .unspecified:

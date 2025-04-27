@@ -11,7 +11,7 @@ import SwiftUI
 extension Color: HasColorTransformations {
   typealias ColorType = Color
   
-  init(compatibleUIColor: UIColor) {
+  public init(compatibleUIColor: UIColor) {
     if #available(iOS 15.0, *) {
       self.init(uiColor: compatibleUIColor)
     } else {
@@ -27,7 +27,7 @@ extension Color: HasColorTransformations {
   }
   
   /// HEX 스트링으로부터: 여러 포맷 지원
-  init?(hex: String) {
+  public init?(hex: String) {
     guard let intVal = sanitize(hex: hex) else {
       return nil
     }
@@ -37,7 +37,7 @@ extension Color: HasColorTransformations {
     self.init(red: r, green: g, blue: b, opacity: a)
   }
   
-  var contrastingColor: Color? {
+  public var contrastingColor: Color? {
     guard let contrastingUIColor = UIColor(self).contrastingColor else {
       return nil
     }
@@ -45,7 +45,7 @@ extension Color: HasColorTransformations {
     return Color(compatibleUIColor: contrastingUIColor)
   }
   
-  var invertedColor: Color? {
+  public var invertedColor: Color? {
     guard let invertedUIColor = UIColor(self).invertedColor else {
       return nil
     }
@@ -53,7 +53,7 @@ extension Color: HasColorTransformations {
     return Color(compatibleUIColor: invertedUIColor)
   }
   
-  func hex(isAlphaIncluded: Bool = false) -> String? {
+  public func hex(isAlphaIncluded: Bool = false) -> String? {
     UIColor(self).hex(isAlphaIncluded: isAlphaIncluded)
   }
 }

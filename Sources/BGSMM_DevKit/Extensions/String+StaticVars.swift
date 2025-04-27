@@ -1,6 +1,6 @@
 //
 //  String+StaticVars.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/27/25.
 //

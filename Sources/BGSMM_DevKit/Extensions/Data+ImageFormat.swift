@@ -1,6 +1,6 @@
 //
 //  Data+ImageFormat.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/25/25.
 //
@@ -8,7 +8,7 @@
 import Foundation
 import ImageIO
 
-extension Data {
+public extension Data {
   var format: String {
     let array = [UInt8](self)
     

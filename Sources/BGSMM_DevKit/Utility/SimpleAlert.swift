@@ -71,9 +71,9 @@ public struct SimpleAlert {
   }
   
   /// "Caution"이라는 제목과 지정된 메시지를 가진 경고 알림을 표시하며, OK 버튼이 눌렸을 때 실행될 선택적인 핸들러를 받습니다.
-  /// - `viewController`를 지정하지 않으면 시스템의 most top view controller를 사용합니다. (SwiftUI iOS 앱에서도 사용 가능)
   ///
   /// - Parameters:
+  ///   - to viewController: 특정 뷰 컨트롤러를 지정할 경우 사용, 지정하지 않으면 시스템의 most top view controller를 사용합니다. (SwiftUI iOS 앱에서도 사용 가능)
   ///   - message: 경고 알림의 메시지.
   ///   - okHandler: OK 버튼이 눌렸을 때 실행될 선택적인 핸들러.
   public static func showCautionAlert(

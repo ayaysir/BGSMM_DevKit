@@ -8,7 +8,7 @@
 import SwiftUI
 
 @available(iOS 13.0, *)
-extension ColorScheme {
+public extension ColorScheme {
   /// 1을 입력하면 light, 2를 입력하면 dark, 그 외의 경우 nil(시스템 설정) 반환
   static func fromAppAppearance(_ appearance: Int) -> ColorScheme? {
     switch appearance {

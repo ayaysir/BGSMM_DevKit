@@ -1,13 +1,13 @@
 //
 //  Decimal+.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/25/25.
 //
 
 import Foundation
 
-extension Decimal {
+public extension Decimal {
   /**
    소수점 이하에서 유의미한 자릿수(유효 자릿수)를 반환합니다.
    

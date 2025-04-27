@@ -1,6 +1,6 @@
 //
 //  UITextField+.swift
-//  Pods
+//  BGSMM_DevKit
 //
 //  Created by 윤범태 on 4/25/25.
 //
@@ -8,7 +8,7 @@
 #if os(iOS) || os(tvOS) || os(visionOS)
 import UIKit
 
-extension UITextField {
+public extension UITextField {
   @IBInspectable var doneAccessory: Bool {
     get {
       return self.doneAccessory
