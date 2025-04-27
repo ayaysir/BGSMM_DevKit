@@ -26,6 +26,12 @@
 		44AFCE6A2DBD3EA8004890FC /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE692DBD3EA2004890FC /* UIImage+.swift */; };
 		44AFCE6C2DBD42CB004890FC /* String+StaticVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */; };
 		44AFCE6E2DBD4442004890FC /* PhotoAuthUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */; };
+		44AFCE7C2DBDF47D004890FC /* CaseIterable+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE7B2DBDF472004890FC /* CaseIterable+.swift */; };
+		44AFCE7E2DBDF52C004890FC /* Date+relativeTimeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE7D2DBDF51B004890FC /* Date+relativeTimeText.swift */; };
+		44AFCE802DBDF654004890FC /* FloatingPoint+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE7F2DBDF64E004890FC /* FloatingPoint+.swift */; };
+		44AFCE822DBDF6D6004890FC /* NSLayoutConstraint+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE812DBDF6CB004890FC /* NSLayoutConstraint+.swift */; };
+		44AFCE842DBDF729004890FC /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE832DBDF724004890FC /* NSObject.swift */; };
+		44AFCE862DBDF795004890FC /* Sequence+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44AFCE852DBDF78C004890FC /* Sequence+.swift */; };
 		44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */; };
 		44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */; };
 		44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD669C2DBA8B400019D1DD /* Calendar+.swift */; };
@@ -87,6 +93,12 @@
 		44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+StaticVars.swift"; sourceTree = "<group>"; };
 		44AFCE6D2DBD443E004890FC /* PhotoAuthUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAuthUtil.swift; sourceTree = "<group>"; };
 		44AFCE6F2DBD45D1004890FC /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		44AFCE7B2DBDF472004890FC /* CaseIterable+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CaseIterable+.swift"; sourceTree = "<group>"; };
+		44AFCE7D2DBDF51B004890FC /* Date+relativeTimeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+relativeTimeText.swift"; sourceTree = "<group>"; };
+		44AFCE7F2DBDF64E004890FC /* FloatingPoint+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FloatingPoint+.swift"; sourceTree = "<group>"; };
+		44AFCE812DBDF6CB004890FC /* NSLayoutConstraint+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSLayoutConstraint+.swift"; sourceTree = "<group>"; };
+		44AFCE832DBDF724004890FC /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		44AFCE852DBDF78C004890FC /* Sequence+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+.swift"; sourceTree = "<group>"; };
 		44FD668E2DBA86550019D1DD /* AppMetadataUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMetadataUtil.swift; sourceTree = "<group>"; };
 		44FD66912DBA86BF0019D1DD /* UIKit.FindTopController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKit.FindTopController.swift; sourceTree = "<group>"; };
 		44FD669C2DBA8B400019D1DD /* Calendar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+.swift"; sourceTree = "<group>"; };
@@ -289,6 +301,7 @@
 		F2C338E0D320670A3A84CC291558EBE9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				44AFCE7B2DBDF472004890FC /* CaseIterable+.swift */,
 				44AFCE672DBD3D47004890FC /* Array+.swift */,
 				44519D692DBA1ABE0084A67A /* Bundle+.swift */,
 				44FD669C2DBA8B400019D1DD /* Calendar+.swift */,
@@ -296,12 +309,17 @@
 				D664060654F2A2B719DCF0263814DCDF /* Collection+.swift */,
 				44FD66B52DBA94110019D1DD /* Data+ImageFormat.swift */,
 				44FD66A02DBA8C0B0019D1DD /* Date+.swift */,
+				44AFCE7D2DBDF51B004890FC /* Date+relativeTimeText.swift */,
 				44FD66C12DBAA1D20019D1DD /* Decimal+.swift */,
 				44AFCE4C2DBBEBEF004890FC /* FileManager+.swift */,
 				44FD66BB2DBA9DF80019D1DD /* FirstrunUtil.swift */,
 				44AFCE4E2DBBEC76004890FC /* Int+.swift */,
+				44AFCE7F2DBDF64E004890FC /* FloatingPoint+.swift */,
+				44AFCE812DBDF6CB004890FC /* NSLayoutConstraint+.swift */,
 				44FD66B92DBA95F70019D1DD /* String+Contains.swift */,
+				44AFCE832DBDF724004890FC /* NSObject.swift */,
 				44519D642DBA176F0084A67A /* String+Localization.swift */,
+				44AFCE852DBDF78C004890FC /* Sequence+.swift */,
 				44AFCE522DBBED17004890FC /* Sttring+Subscript.swift */,
 				44AFCE6B2DBD42C5004890FC /* String+StaticVars.swift */,
 				44AFCE542DBBEE6A004890FC /* UIApplication+.swift */,
@@ -471,14 +489,17 @@
 				44AFCE6E2DBD4442004890FC /* PhotoAuthUtil.swift in Sources */,
 				44519D772DBA288E0084A67A /* Localizable.strings in Sources */,
 				44FD669D2DBA8B430019D1DD /* Calendar+.swift in Sources */,
+				44AFCE822DBDF6D6004890FC /* NSLayoutConstraint+.swift in Sources */,
 				15B6C2576953C211D717D1BEE55F7ED5 /* BGSMM_DevKit.swift in Sources */,
 				44AFCE552DBBEE73004890FC /* UIApplication+.swift in Sources */,
 				44FD66AE2DBA91FC0019D1DD /* UIDevice+.swift in Sources */,
 				44FD66B42DBA93200019D1DD /* ImageIOUtil.swift in Sources */,
 				44FD66B82DBA94A40019D1DD /* ImageFormat.swift in Sources */,
 				74F6E89E8D3FF472B573841B41896716 /* BGSMM_DevKit-dummy.m in Sources */,
+				44AFCE862DBDF795004890FC /* Sequence+.swift in Sources */,
 				44FD66BE2DBA9E8B0019D1DD /* UITextField+.swift in Sources */,
 				44FD66B02DBA92830019D1DD /* ImageHeaderData.swift in Sources */,
+				44AFCE7E2DBDF52C004890FC /* Date+relativeTimeText.swift in Sources */,
 				44AFCE5B2DBBF1E8004890FC /* UIViewController.swift in Sources */,
 				44AFCE5D2DBBF27E004890FC /* UserDefaults+.swift in Sources */,
 				44FD66C42DBAA3740019D1DD /* UserDefaults+ObjectSavable.swift in Sources */,
@@ -486,6 +507,7 @@
 				44FD66922DBA86BF0019D1DD /* UIKit.FindTopController.swift in Sources */,
 				44AFCE572DBBEF55004890FC /* UIButton+.swift in Sources */,
 				44AFCE4F2DBBEC79004890FC /* Int+.swift in Sources */,
+				44AFCE7C2DBDF47D004890FC /* CaseIterable+.swift in Sources */,
 				F8C1B53C8512195BFA2AAABC2FD050EF /* Collection+.swift in Sources */,
 				44519D6A2DBA1AC20084A67A /* Bundle+.swift in Sources */,
 				44FD66BA2DBA95FA0019D1DD /* String+Contains.swift in Sources */,
@@ -494,6 +516,8 @@
 				44519D652DBA17780084A67A /* String+Localization.swift in Sources */,
 				44FD66A32DBA8DB10019D1DD /* DateUtil.swift in Sources */,
 				44FD66902DBA86550019D1DD /* AppMetadataUtil.swift in Sources */,
+				44AFCE802DBDF654004890FC /* FloatingPoint+.swift in Sources */,
+				44AFCE842DBDF729004890FC /* NSObject.swift in Sources */,
 				CC67D42C985299D7C2C0337620102F71 /* SimpleAlert.swift in Sources */,
 				44FD66B62DBA94140019D1DD /* Data+ImageFormat.swift in Sources */,
 			);

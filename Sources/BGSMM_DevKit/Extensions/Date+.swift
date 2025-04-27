@@ -31,5 +31,14 @@ public extension Date {
   func ymdComponents(calendar: Calendar = Calendar.current) -> DateComponents {
     calendar.dateComponents([.year, .month, .day], from: self)
   }
+  
+  /// 연월일만 뽑기 - 예) 20201203
+  var ymdText: String {
+    let year = get(.year)
+    let month = get(.month) <= 9 ? "0\(get(.month))" : "\(get(.month))"
+    let day = get(.day) <= 9 ? "0\(get(.day))" : "\(get(.day))"
+    
+    return "\(year)\(month)\(day)"
+  }
 }
 

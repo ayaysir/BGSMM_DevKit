@@ -12,4 +12,9 @@ public extension Int {
   var cgFloat: CGFloat {
     CGFloat(self)
   }
+  
+  /// 해당 Int가 특정 범위 내에 속해 있는지 여부
+  func isWithin(_ range: ClosedRange<Int>) -> Bool {
+    range ~= self
+  }
 }

@@ -15,3 +15,13 @@
 "loc.denied_message" = "%@の権限は拒否され、使用できません。%@の権限設定を変更しますか？";
 "loc.unknown" = "不明";
 "loc.camera_unavailable" = "カメラの使用はできません。";
+
+"loc.n_years_ago" = "%d年前";
+"loc.n_months_ago" = "%dヶ月前";
+"loc.n_weeks_ago" = "%d週間前";
+"loc.yesterday" = "昨日";
+"loc.n_days_ago" = "%d日前";
+"loc.n_hours_ago" = "%d時間前";
+"loc.n_minutes_ago" = "%d分前";
+"loc.just_now" = "たった今";
+"loc.n_seconds_ago" = "%d秒前";

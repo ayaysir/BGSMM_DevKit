@@ -15,3 +15,15 @@
 "loc.denied_message" = "The %@ permission was denied and cannot be used. Would you like to change the %@ permission settings?";
 "loc.unknown" = "Unknown";
 "loc.camera_unavailable" = "Camera cannot be used.";
+
+"loc.n_years_ago" = "%d years ago";
+"loc.n_months_ago" = "%d months ago";
+"loc.n_weeks_ago" = "%d weeks ago";
+"loc.yesterday" = "Yesterday";
+"loc.n_days_ago" = "%d days ago";
+"loc.n_hours_ago" = "%d hours ago";
+"loc.n_minutes_ago" = "%d minutes ago";
+"loc.just_now" = "Just now";
+"loc.n_seconds_ago" = "%d seconds ago";
+
+
