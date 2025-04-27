@@ -8,19 +8,22 @@
 import SwiftUI
 
 @available(iOS 14.0, *)
-extension Color {
-  /// HEX 스트링으로
-  func toHex() -> String? {
-    guard let components = UIColor(self).cgColor.components,
-          components.count >= 3 else {
-      return nil
+extension Color: HasColorTransformations {
+  typealias ColorType = Color
+  
+  init(compatibleUIColor: UIColor) {
+    if #available(iOS 15.0, *) {
+      self.init(uiColor: compatibleUIColor)
+    } else {
+      // iOS 14 fallback
+      let components = compatibleUIColor.cgColor.components ?? [0, 0, 0, 1]
+      let r = Double(components[safe: 0] ?? 0)
+      let g = Double(components[safe: 1] ?? 0)
+      let b = Double(components[safe: 2] ?? 0)
+      let a = Double(components[safe: 3] ?? 1)
+      
+      self.init(.sRGB, red: r, green: g, blue: b, opacity: a)
     }
-    
-    let r = Int(components[0] * 255)
-    let g = Int(components[1] * 255)
-    let b = Int(components[2] * 255)
-    
-    return String(format: "#%02X%02X%02X", r, g, b)
   }
   
   /// HEX 스트링으로부터: 여러 포맷 지원
@@ -34,5 +37,23 @@ extension Color {
     self.init(red: r, green: g, blue: b, opacity: a)
   }
   
-
+  var contrastingColor: Color? {
+    guard let contrastingUIColor = UIColor(self).contrastingColor else {
+      return nil
+    }
+    
+    return Color(compatibleUIColor: contrastingUIColor)
+  }
+  
+  var invertedColor: Color? {
+    guard let invertedUIColor = UIColor(self).invertedColor else {
+      return nil
+    }
+    
+    return Color(compatibleUIColor: invertedUIColor)
+  }
+  
+  func hex(isAlphaIncluded: Bool = false) -> String? {
+    UIColor(self).hex(isAlphaIncluded: isAlphaIncluded)
+  }
 }
